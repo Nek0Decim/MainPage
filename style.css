@@ -3,8 +3,12 @@
     --beige: #f3eadf;
     --dark: #1a1a1a;
     --gray: #d9d9d9;
-    --card: #fdfbf7; /* lekko białe tło */
+    --card: #fdfbf7;
 }
+
+/* ============================= */
+/* RESET */
+/* ============================= */
 
 * {
     margin: 0;
@@ -15,81 +19,10 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--beige);
-  
     color: var(--dark);
 }
-/* SEKCJA */
 
-.about-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 80px auto;
-}
-
-/* BLOK */
-
-.about-block {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 100px;
-}
-
-.about-block.reverse {
-    flex-direction: row-reverse;
-}
-
-/* OBRAZ */
-
-.about-image {
-    flex: 1;
-    min-height: 400px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* TEKST */
-
-.about-content {
-    flex: 1;
-}
-
-.about-content h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 18px;
-    color: #444;
-}
-
-/* RESPONSYWNOŚĆ */
-
-@media (max-width: 900px) {
-
-    .about-block,
-    .about-block.reverse {
-        flex-direction: column;
-    }
-
-    .about-image {
-        width: 100%;
-        min-height: 300px;
-    }
-}
+/* Subtelny pattern w tle */
 body::before {
     content: "";
     position: fixed;
@@ -97,16 +30,18 @@ body::before {
     background: url("logo-pattern.png");
     background-size: 220px;
     background-repeat: repeat;
-    opacity: 0.56;   /* delikatniej */
-    z-index: -1;     /* KLUCZOWE */
+    opacity: 0.05;
+    z-index: -1;
 }
 
+/* ============================= */
 /* HEADER */
+/* ============================= */
 
 header {
     background: var(--primary);
     color: var(--beige);
-    padding: 25px 20px;
+    padding: 30px 20px;
 }
 
 .header-inner {
@@ -120,12 +55,11 @@ header {
 
 header img {
     width: 250px;
-	margin:0 ;
 }
 
 .title-group h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     margin-bottom: 6px;
 }
 
@@ -135,86 +69,129 @@ header img {
     letter-spacing: 1px;
 }
 
-/* SEKCJE */
+/* ============================= */
+/* SEKCJE (INDEX + O MNIE) */
+/* ============================= */
 
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 100px 20px;
+.section,
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
 }
 
-.block {
+/* ============================= */
+/* BLOKI */
+/* ============================= */
+
+.block,
+.about-block {
     display: flex;
-    align-items: center;
-    gap: 70px;
+    align-items: stretch;
     margin-bottom: 120px;
     background: var(--card);
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
 }
 
-.block.reverse {
+.block.reverse,
+.about-block.reverse {
     flex-direction: row-reverse;
 }
 
-.image-placeholder {
+/* ============================= */
+/* OBRAZY */
+/* ============================= */
+
+.image-placeholder,
+.about-image {
     flex: 1;
-    height: 300px;
+    min-height: 420px;
     background: var(--gray);
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
-.block:hover .image-placeholder {
-    background: #e8e8e8;
-    border: 3px solid var(--primary);
-    transform: translateY(-4px);
+/* realne img (o-mnie) */
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
 }
 
-.content {
+/* hover */
+.block:hover .about-image img,
+.about-block:hover .about-image img {
+    transform: scale(1.04);
+}
+
+/* ============================= */
+/* TEKST */
+/* ============================= */
+
+.content,
+.about-content {
     flex: 1;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.content h2 {
+.content h2,
+.about-content h2 {
     font-family: 'Playfair Display', serif;
+    font-size: 34px;
     color: var(--primary);
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    margin-bottom: 25px;
 }
 
-.content p {
-    margin-bottom: 25px;
-    line-height: 1.7;
-    font-size: 1rem;
+.content p,
+.about-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
+
+/* ============================= */
+/* PRZYCISK (INDEX) */
+/* ============================= */
 
 .button {
-    display: inline-block;
-    padding: 12px 24px;
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 12px 26px;
     background: var(--primary);
     color: var(--beige);
     text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s ease;
-    font-weight: 600;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background: #a32323;
+    background: #6f1717;
     transform: translateY(-2px);
 }
 
+/* ============================= */
 /* FOOTER */
+/* ============================= */
 
 footer {
     background: var(--primary);
     color: var(--beige);
     text-align: center;
     padding: 40px 20px;
+    margin-top: 60px;
 }
 
+/* ============================= */
 /* RESPONSYWNOŚĆ */
+/* ============================= */
 
 @media (max-width: 900px) {
 
@@ -223,22 +200,24 @@ footer {
         text-align: center;
     }
 
-    .block {
-        flex-direction: column;
-        gap: 40px;
-        padding: 35px;
-    }
-
-    .block.reverse {
+    .block,
+    .about-block,
+    .block.reverse,
+    .about-block.reverse {
         flex-direction: column;
     }
 
-    .image-placeholder {
-        width: 100%;
-        height: 220px;
+    .image-placeholder,
+    .about-image {
+        min-height: 280px;
+    }
+
+    .content,
+    .about-content {
+        padding: 40px 30px;
     }
 
     .title-group h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 }
