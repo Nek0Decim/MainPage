@@ -78,6 +78,7 @@ header img {
     width: 90%;
     max-width: 1200px;
     margin: 100px auto;
+position: relative;
 }
 
 /* ============================= */
@@ -227,27 +228,33 @@ footer {
 /* ============================= */
 
 .back-button {
-    position: absolute;
-    top: 140px; /* poniżej headera */
-    left: 30px;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    font-size: 14px;
+    gap: 10px;
+
+    padding: 16px 28px;
+    font-size: 16px;
+    font-weight: 500;
     letter-spacing: 1px;
+
+    color: var(--beige);
+    background: var(--primary);
+    border-radius: 999px;
     text-decoration: none;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: 30px;
-    background: rgba(253, 251, 247, 0.85);
-    backdrop-filter: blur(2px);
-    transition: all 0.3s ease;
-    z-index: 10;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .back-button:hover {
-    background: var(--primary);
-    color: var(--beige);
-    transform: translateX(-4px);
+    background: #6f1717;
+    transform: translateX(-50%) translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
 }
