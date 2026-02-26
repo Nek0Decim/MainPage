@@ -30,7 +30,7 @@ body::before {
     background-image: url("logo-pattern.png");
     background-size: 220px;
     background-repeat: repeat;
-    opacity: 0.25; /* możesz zmieniać */
+    opacity: 0.50; /* możesz zmieniać */
     z-index: -2;
 }
 
