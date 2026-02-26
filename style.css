@@ -221,3 +221,33 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* ============================= */
+/* PRZYCISK POWRÓT */
+/* ============================= */
+
+.back-button {
+    position: absolute;
+    top: 140px; /* poniżej headera */
+    left: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+    background: rgba(253, 251, 247, 0.85);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.back-button:hover {
+    background: var(--primary);
+    color: var(--beige);
+    transform: translateX(-4px);
+}
