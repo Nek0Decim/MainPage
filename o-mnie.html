@@ -1,139 +1,239 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O mnie – Jakub Kamiński</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#63191d">
+  <title>O mnie i moim stylu prowadzenia | Jakub Kamiński</title>
+  <meta name="description" content="Poznaj Jakuba Kamińskiego: Mistrza Gry z Wrocławia, projektanta narracji i autora przygód RPG. Sprawdź moją filozofię prowadzenia, inspiracje i podejście do graczy.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="O mnie | Jakub Kamiński — Mistrz Gry i projektant narracji">
+  <meta property="og:description" content="Nie prowadzę przeciwko graczom. Tworzę świat, w którym ich decyzje mają znaczenie.">
+  <meta property="og:image" content="logo-red.png">
+  <link rel="icon" type="image/png" href="logo-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="about.css">
 </head>
-<body>
+<body class="home-page about-page">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
 
-<header>
-    <div class="header-inner">
-        <img src="logo-red.png" alt="Logo">
-        <div class="title-group">
-            <h1>Jakub Kamiński</h1>
-            <p>Mistrz Gry · Narracja · Wrocław</p>
-        </div>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-brand" aria-label="Jakub Kamiński — strona główna">
+        <img src="logo-red.png" width="74" height="74" alt="" decoding="async">
+        <span class="site-brand__text">
+          <span class="site-brand__name">Jakub Kamiński</span>
+          <span class="site-brand__subtitle">Mistrz Gry · Narracja · Wrocław</span>
+        </span>
+      </a>
+      <a class="header-contact" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20sesj%C4%99%20RPG">Porozmawiajmy <span aria-hidden="true">↗</span></a>
     </div>
-</header>
+  </header>
 
-<nav>
-    <div class="nav-inner">
-        <a href="index.html">Strona główna</a>
-        <a href="o-mnie.html" class="active">O mnie</a>
+  <nav class="site-nav" aria-label="Nawigacja główna">
+    <div class="site-nav__desktop">
+      <a href="index.html">Start</a>
+      <a href="sesje-prywatne.html">Sesje prywatne</a>
+      <a href="sesje-grupowe.html">Kampanie</a>
+      <a href="pracownia-narracji.html">Pracownia Narracji</a>
+      <a href="index.html#tworczosc">Twórczość</a>
+      <a href="o-mnie.html" class="is-current" aria-current="page">O mnie</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <details class="site-nav__mobile">
+      <summary>Menu <span class="site-nav__menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+      <div class="site-nav__mobile-links">
+        <a href="index.html">Start</a>
         <a href="sesje-prywatne.html">Sesje prywatne</a>
-        <a href="sesje-grupowe.html">Sesje grupowe</a>
+        <a href="sesje-grupowe.html">Kampanie</a>
         <a href="pracownia-narracji.html">Pracownia Narracji</a>
+        <a href="index.html#tworczosc">Twórczość</a>
+        <a aria-current="page" href="o-mnie.html">O mnie</a>
         <a href="faq.html">FAQ</a>
-    </div>
-</nav>
+      </div>
+    </details>
+  </nav>
 
-<div class="page-header">
-    <h2>O mnie</h2>
-    <div class="page-header-divider"></div>
-    <p>Człowiek przy stole. Opowiadacz. Architekt sytuacji.</p>
-</div>
-
-<section class="about-section">
-
-    <div class="about-block">
-        <div class="about-image">
-            <img src="kim-jestem.png" alt="Jakub prowadzący sesję RPG">
+  <main id="tresc">
+    <section class="about-hero" aria-labelledby="about-hero-title">
+      <div class="layout-wrap about-hero__grid">
+        <div class="about-hero__copy">
+          <p class="eyebrow eyebrow--light">Człowiek przy stole <span aria-hidden="true">✦</span> Architekt sytuacji</p>
+          <h1 id="about-hero-title">Nie jestem przeciwnikiem graczy.<em>Jestem głosem świata.</em></h1>
+          <p>Świata, który odpowiada na pomysłowość, odwagę i błędy bohaterów. Nie piszę im zakończenia — przygotowuję historie, które mogą zmieniać się z każdym wyborem.</p>
+          <div class="about-hero__actions">
+            <a class="home-button home-button--gold" href="#filozofia">Poznaj moją filozofię <span aria-hidden="true">↓</span></a>
+            <a class="about-inline-link" href="#kim-jestem">Kim jestem? <span aria-hidden="true">↘</span></a>
+          </div>
         </div>
-        <div class="about-content">
-            <span class="content-tag">Kim jestem</span>
-            <h2>Kim jestem</h2>
-            <p>
-                Nazywam się Jakub Kamiński i od lat prowadzę sesje RPG
-                dla młodzieży i dorosłych — zarówno kameralne kampanie,
-                jak i wydarzenia konwentowe.
-            </p>
-            <p>
-                RPG to dla mnie medium opowieści —
-                przestrzeń, w której świat reaguje na decyzje graczy,
-                a historia powstaje między ludźmi przy stole.
-            </p>
-            <p>
-                Ukończyłem studia z zakresu Projektowania Gier.
-                Specjalizuję się w narracji interaktywnej
-                i konstrukcji scenariuszy — świadomie budując napięcie,
-                rytm historii i doświadczenie gracza jako uczestnika opowieści.
-            </p>
-        </div>
+        <figure class="about-hero__photo">
+          <img src="images/stock-hero.jpg" alt="Wyrzucone w powietrze wielościenne kości RPG" width="1200" height="800" fetchpriority="high">
+          <figcaption>„Każda decyzja może zmienić bieg opowieści.”</figcaption>
+        </figure>
+      </div>
+      <div class="about-hero__underbar" aria-hidden="true"></div>
+    </section>
+
+    <div class="about-intro-strip">
+      <div class="layout-wrap about-intro-strip__inner">
+        <span><b>01</b> Narracja interaktywna</span>
+        <span><b>02</b> Improwizacja</span>
+        <span><b>03</b> Konsekwencje wyborów</span>
+      </div>
     </div>
 
-    <div class="about-block reverse">
-        <div class="about-image">
-            <img src="styl-prowadzenia.png" alt="Prowadzenie sesji na konwencie">
+    <section id="kim-jestem" class="about-chapter layout-wrap" aria-labelledby="bio-heading">
+      <div class="about-chapter__heading">
+        <p class="eyebrow">01 <span aria-hidden="true">/</span> Kilka słów o mnie</p>
+        <h2 id="bio-heading">Kim jestem, <em>gdy siadam za ekranem MG?</em></h2>
+      </div>
+      <div class="about-bio-grid">
+        <div class="about-bio-grid__text">
+          <p class="about-lead">Nazywam się <strong>Jakub Kamiński</strong>. Od lat prowadzę sesje RPG dla młodzieży i dorosłych — od kameralnych stołów po wydarzenia konwentowe.</p>
+          <p>Ukończyłem studia z zakresu projektowania gier. Szczególnie interesują mnie narracja interaktywna, konstrukcja scenariuszy i budowanie historii, w których to uczestnicy nadają wydarzeniom kierunek.</p>
+          <p>W mojej pracy spotykają się dwie pasje: tworzenie spójnych światów i obserwowanie, jak gracze potrafią wywrócić ich założenia do góry nogami. Najciekawsze momenty często zaczynają się od nieoczekiwanego pytania, jednego rzutu lub pozornie drobnej decyzji.</p>
+          <a class="text-link" href="pracownia-narracji.html">Zobacz, co tworzę poza stołem <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="about-content">
-            <span class="content-tag">Filozofia</span>
-            <h2>Mój styl prowadzenia</h2>
-            <p>
-                Nie jestem po to, by być wrogiem graczy.
-                Świat bywa brutalny — ale trudności istnieją po to,
-                by zwycięstwa miały znaczenie.
-            </p>
-            <p>
-                Scenariusz jest elastyczny — historia skręca razem z drużyną.
-                Ważne są nie tylko historie, które ja chcę opowiedzieć,
-                ale też te, które gracze chcą przeżyć.
-                Kanon traktuję jak plastelinę.
-            </p>
-            <p>
-                Uwielbiam improwizację, do której zmuszają mnie decyzje graczy.
-                Najbardziej siedzą mi w pamięci momenty, które wyszły z przypadku —
-                z jednej decyzji, z losowego rzutu kostką.
-            </p>
+        <aside class="about-bio-note" aria-label="W skrócie">
+          <div class="about-bio-note__ornament" aria-hidden="true">✧</div>
+          <p class="about-bio-note__tag">Mój punkt wyjścia</p>
+          <p class="about-bio-note__statement">„Historia nie należy wyłącznie do tego, kto ją przygotował.”</p>
+          <div class="about-bio-note__rule"></div>
+          <p>Scenariusz jest zaproszeniem do działania, nie listą scen, które drużyna musi odegrać.</p>
+          <img src="logo-red.png" alt="" loading="lazy" width="96" height="96">
+        </aside>
+      </div>
+    </section>
+
+    <section id="filozofia" class="about-philosophy" aria-labelledby="philosophy-heading">
+      <div class="layout-wrap">
+        <div class="about-section-header">
+          <p class="eyebrow">02 <span aria-hidden="true">/</span> To, w co wierzę</p>
+          <h2 id="philosophy-heading">Moja filozofia <em>prowadzenia</em></h2>
+          <p>Trzy myśli twórców RPG, które szczególnie dobrze opisują moje podejście — i to, co oznaczają w praktyce przy moim stole.</p>
         </div>
+
+        <article class="philosophy-feature" aria-labelledby="quote-pondsmith-title">
+          <div class="philosophy-feature__quote">
+            <span class="philosophy-feature__number">I / Konsekwencje</span>
+            <span class="philosophy-feature__mark" aria-hidden="true">“</span>
+            <h3 id="quote-pondsmith-title">Nie zamierzam zabijać postaci graczy. Ale dam im wiele okazji do podjęcia głupich decyzji, które mogą ich zgubić.</h3>
+            <p class="philosophy-feature__attribution">Mike Pondsmith <span>· swobodna parafraza wypowiedzi, nie dosłowny cytat</span></p>
+            <a href="https://www.youtube.com/shorts/J3p_6reHdEA" target="_blank" rel="noopener noreferrer" class="quote-source quote-source--light">Zobacz nagranie, do którego nawiązuję ↗</a>
+          </div>
+          <div class="philosophy-feature__interpretation">
+            <p class="about-mini-heading">Co to znaczy przy moim stole?</p>
+            <p><strong>Nie gram przeciwko drużynie.</strong> Nie szukam okazji, by ukarać graczy za każdą pomyłkę. Ale jeśli ich postacie ignorują wyraźne ostrzeżenia, podejmują ryzyko albo stawiają wszystko na jeden plan — świat powinien na to odpowiedzieć.</p>
+            <p>Konsekwencje nie oznaczają automatycznej porażki. Dobry pomysł może uratować sytuację, a zły wybór stworzyć fantastyczny nowy wątek. Chodzi o to, żeby decyzje miały wagę — zarówno wtedy, gdy prowadzą do triumfu, jak i wtedy, gdy wszystko idzie nie po myśli bohaterów.</p>
+            <p class="about-strong-line">Nie planuję porażki graczy. Pozwalam, by ich działania naprawdę coś zmieniały.</p>
+          </div>
+        </article>
+
+        <div class="philosophy-grid">
+          <article class="philosophy-card">
+            <p class="philosophy-card__index">II / Improwizacja</p>
+            <blockquote>„Bądź gotów porzucić to, co przygotowałeś, jeśli przy stole wydarzy się coś lepszego.”</blockquote>
+            <p class="philosophy-card__person">Chris Perkins <span>· tłumaczenie wypowiedzi cytowanej w „Return of the Lazy Dungeon Master”</span></p>
+            <p>Uwielbiam pisać scenariusze, lecz nie przywiązuję się do jednej ścieżki fabularnej. Jeśli gracze znajdą zaskakujące rozwiązanie lub zainteresują się wątkiem, którego nie planowałem, wolę pójść za tą energią. <strong>Przygotowanie ma dawać mi swobodę improwizacji, a nie odbierać swobodę graczom.</strong></p>
+            <a class="quote-source" href="https://shop.slyflourish.com/products/return-of-the-lazy-dungeon-master" target="_blank" rel="noopener noreferrer">Źródło cytatu ↗</a>
+          </article>
+          <article class="philosophy-card">
+            <p class="philosophy-card__index">III / Wspólna opowieść</p>
+            <blockquote>„Jeśli powstaje historia, rodzi się ona ze współdziałania wszystkich uczestników, nie tylko Mistrza Gry.”</blockquote>
+            <p class="philosophy-card__person">Gary Gygax <span>· skrócone tłumaczenie fragmentu wywiadu</span></p>
+            <p>Nie oczekuję, że drużyna odegra historię, którą już znam. Przygotowuję konflikty, postacie, miejsca i możliwe kierunki wydarzeń, ale to wybory graczy decydują, które z nich staną się naprawdę ważne. <strong>Najlepsze opowieści należą do wszystkich uczestników sesji.</strong></p>
+            <a class="quote-source" href="https://www.gamedeveloper.com/business/the-dungeon-master-an-interview-with-gary-gygax" target="_blank" rel="noopener noreferrer">Źródło wywiadu ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-method layout-wrap" aria-labelledby="method-heading">
+      <div class="about-method__image">
+        <img src="images/stock-kampanie.jpg" alt="Podręczniki RPG, miniaturki bohaterów, mapa i kostki do gry" width="1200" height="900" loading="lazy">
+        <span>Przygoda zaczyna się od przygotowań. Żyje dzięki graczom.</span>
+      </div>
+      <div class="about-method__text">
+        <p class="eyebrow">03 <span aria-hidden="true">/</span> Od idei do sesji</p>
+        <h2 id="method-heading">Jak prowadzę <em>przy stole?</em></h2>
+        <div class="method-point">
+          <span aria-hidden="true">✦</span>
+          <div><h3>Scenariusz jest elastyczny</h3><p>Plan pozwala mi zbudować napięcie i rytm, lecz historia może skręcić w stronę, której nikt wcześniej nie przewidział.</p></div>
+        </div>
+        <div class="method-point">
+          <span aria-hidden="true">✦</span>
+          <div><h3>Kanon to materiał, nie kajdany</h3><p>Lubię bogate uniwersa, ale traktuję ich zasady jak tworzywo. Liczy się spójność naszej opowieści oraz to, co chcemy w niej wspólnie odkryć.</p></div>
+        </div>
+        <div class="method-point">
+          <span aria-hidden="true">✦</span>
+          <div><h3>Wygrana ma znaczenie, bo istnieje ryzyko</h3><p>Dbam o czytelne stawki, uczciwe konsekwencje i przestrzeń do kreatywnego rozwiązywania problemów.</p></div>
+        </div>
+        <div class="method-point">
+          <span aria-hidden="true">✦</span>
+          <div><h3>Ważni są ludzie przy stole</h3><p>Rozmawiamy o oczekiwaniach, granicach komfortu i tym, jaki rodzaj historii chcemy przeżyć. Dobra atmosfera jest częścią dobrej sesji.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-inspirations" aria-labelledby="inspirations-heading">
+      <div class="layout-wrap about-inspirations__grid">
+        <div class="about-inspirations__copy">
+          <p class="eyebrow">04 <span aria-hidden="true">/</span> Historie, które inspirują</p>
+          <h2 id="inspirations-heading">Z czego czerpię <em>pomysły?</em></h2>
+          <p>Szukam inspiracji w muzyce, fantastyce, animacji, mandze i światach z rozbudowanym lore. Najbardziej fascynuje mnie to, jak pozornie odległe wątki łączą się w spójną całość.</p>
+          <p>Sięgam po twórczość Dmitrija Głuchowskiego, Dana Abnetta, Christie Golden, Ricka Riordana, Olivera Bowdena, Hirohiko Arakiego, Tatsukiego Fujimoto i Gege Akutamiego.</p>
+          <p>Uniwersa takie jak <em>Warhammer 40,000</em> czy <em>League of Legends</em> przypominają mi, że dobry świat ma własną historię, konflikty i charakter — również poza tym, co dzieje się na oczach bohaterów.</p>
+          <p class="about-inspirations__highlight">Inspiracja to dla mnie początek pracy twórczej, a nie gotowa odpowiedź.</p>
+        </div>
+        <figure class="about-inspirations__image">
+          <img src="images/stock-inspiracje.jpg" alt="Kostki RPG i ilustrowane karty rozłożone na stole" width="900" height="900" loading="lazy">
+          <figcaption>Literatura · Gry · Światotwórstwo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about-beyond layout-wrap" aria-labelledby="beyond-heading">
+      <div class="about-beyond__content">
+        <p class="eyebrow">05 <span aria-hidden="true">/</span> Poza ekranem MG</p>
+        <h2 id="beyond-heading">Nie tylko prowadzę. <em>Także tworzę.</em></h2>
+        <p>Piszę scenariusze, historie postaci, opisy światów i łuki fabularne. Mam już pierwszą opublikowaną przygodę RPG, a kolejne projekty i teksty chcę udostępniać na swojej stronie.</p>
+        <p>Jeżeli interesuje Cię wspólna praca nad opowieścią, zajrzyj do Pracowni Narracji. A jeśli szukasz inspiracji albo chcesz zobaczyć moją twórczość — obserwuj sekcję publikacji i przyszłe Zapiski Mistrza Gry.</p>
+        <div class="about-beyond__links">
+          <a class="home-button home-button--red" href="pracownia-narracji.html">Pracownia Narracji <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="index.html#tworczosc">Moje publikacje <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="about-beyond__illustration" aria-hidden="true">
+        <span class="about-beyond__star">✧</span>
+        <img src="logo-red.png" width="230" height="230" alt="" loading="lazy">
+        <span class="about-beyond__motto">Światy do odkrycia.<br>Historie do stworzenia.</span>
+      </div>
+    </section>
+
+    <section class="contact-banner" aria-labelledby="contact-heading">
+      <div class="layout-wrap contact-banner__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Rozpocznijmy wspólną opowieść</p>
+          <h2 id="contact-heading">Masz pomysł na przygodę?</h2>
+          <p>Chcesz zagrać, zamówić scenariusz albo porozmawiać o współpracy? Napisz do mnie.</p>
+        </div>
+        <a class="home-button home-button--gold" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20ze%20strony%20RPG">Napisz wiadomość <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout-wrap site-footer__inner">
+      <div class="site-footer__brand"><img src="logo-red.png" alt="" width="46" height="46" loading="lazy"><div><strong>Jakub Kamiński</strong><span>Mistrz Gry · Narracja · Wrocław</span></div></div>
+      <div class="site-footer__links"><a href="index.html">Start</a><a href="faq.html">FAQ</a><a href="regulamin.html">Regulamin</a><a href="mailto:jakubkaminski1808@gmail.com">Kontakt</a></div>
+      <p class="site-footer__copyright">© 2026 Jakub Kamiński · Sesje RPG</p>
     </div>
-
-    <div class="about-block">
-        <div class="about-image">
-            <img src="inspiracje.png" alt="Inspiracje">
-        </div>
-        <div class="about-content">
-            <span class="content-tag">Inspiracje</span>
-            <h2>Inspiracje</h2>
-            <p>
-                Inspiruję się muzyką, literaturą fantasy,
-                animacjami oraz rozbudowanymi uniwersami z głębokim lore'em.
-            </p>
-            <p>
-                Sięgam po twórców takich jak Dmitrij Głuchowski, Dan Abnett,
-                Christie Golden, Rick Riordan czy Oliwer Bowden —
-                a z manga po Hirohiko Arakiego, Tatsukiego Fujimoto i Gege Akutamiego.
-                Ich wpływ znajdziesz w wielu momentach moich sesji.
-            </p>
-            <p>
-                Ogromne universa jak Warhammer 40k czy League of Legends
-                są dla mnie inspiracją do tworzonych światów —
-                ich wewnętrzna spójność, niuanse i wzajemnie przenikające się wątki
-                to wzorzec, do którego dążę.
-            </p>
-        </div>
-    </div>
-
-</section>
-
-<footer>
-    <div class="footer-inner">
-        <img src="logo-red.png" alt="Logo" class="footer-logo">
-        <p class="footer-contact">
-            <a href="mailto:jakubkaminski1808@gmail.com">jakubkaminski1808@gmail.com</a>
-            &nbsp;·&nbsp;
-            <a href="tel:+48735780951">+48 735 780 951</a>
-        </p>
-        <div class="footer-links">
-            <a href="regulamin.html">Regulamin</a>
-        </div>
-        <p>© 2025 Jakub Kamiński – Sesje RPG · Wrocław</p>
-    </div>
-</footer>
-
-<a href="index.html" class="back-button">← Powrót</a>
-
+    <p class="about-photo-credit">Zdjęcia ilustracyjne: materiały stockowe przesłane do projektu, autorzy fotografii: Michele Raffoni, Nika Benedictova i Stephen Hardy. Fotografie nie przedstawiają autora strony.</p>
+  </footer>
 </body>
 </html>
