@@ -1,0 +1,26 @@
+REPERTUAR RPG — aktualizacja katalogu
+
+Dodane pliki:
+- repertuar.html — nowa podstrona katalogu
+- repertuar.css — style katalogu (nie zastępuje style.css ani home.css)
+- repertuar.js — filtrowanie i wyszukiwarka po tytułach
+
+Zaktualizowane pliki:
+- index.html — odnośniki do repertuaru
+- o-mnie.html — pozycja Repertuar w menu
+- sesje-prywatne.html — odnośnik do pełnego katalogu i poprawiony opis
+
+W katalogu: 16 jednostrzałów, 7 kampanii (23 tytuły).
+Nie podawano autorstwa, długości przygód, poziomów, cen ani statusu dostępności, bo nie były potwierdzone.
+
+POPRAWKI W WERSJI 3.1:
+- „Saga Żniwiarza” przeniesiona do Cyberpunk RED; oznaczona jako kampania / cykl przygód o Żniwiarzu.
+- Poprawiono pisownię „Jatka w Spittlefeld” i „Śmiertelna Przesyłka”, także w tematach wiadomości e-mail.
+- Liczba pozycji w Cyberpunk RED: 6 (5 jednostrzałów i 1 kampania).
+
+DO UZUPEŁNIENIA W PRZYSZŁOŚCI:
+1. Które pozycje są autorskie i które są adaptacjami/innych twórców.
+2. Dodatkowe przygody do Wiedźmina / Wrath & Glory — dodamy po otrzymaniu tytułów.
+3. Szczegóły opisów, przewidywany czas gry i poziomy postaci.
+
+Aby uruchomić: rozpakuj cały ZIP, otwórz index.html. Wszystkie pliki muszą pozostać w jednym katalogu, z obrazami wewnątrz images/.

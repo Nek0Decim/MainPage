@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#63191d">
+  <meta name="description" content="Repertuar RPG Jakuba Kamińskiego: 16 jednostrzałów i 7 kampanii do omówienia dla prywatnych drużyn. D&D 5e, Cyberpunk RED, Zew Cthulhu i Warhammer Fantasy.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Repertuar RPG | Jakub Kamiński">
+  <meta property="og:description" content="Sprawdź repertuar jednostrzałów i kampanii RPG oraz zapytaj o sesję dla swojej drużyny.">
+  <meta property="og:image" content="logo-red.png">
+  <title>Repertuar RPG — jednostrzały i kampanie | Jakub Kamiński</title>
+  <link rel="icon" type="image/png" href="logo-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="repertuar.css">
+</head>
+<body class="home-page repertuar-page">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-brand" aria-label="Jakub Kamiński — strona główna">
+        <img src="logo-red.png" width="74" height="74" alt="" decoding="async">
+        <span class="site-brand__text"><span class="site-brand__name">Jakub Kamiński</span><span class="site-brand__subtitle">Mistrz Gry · Narracja · Wrocław</span></span>
+      </a>
+      <a class="header-contact" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20sesj%C4%99%20RPG">Porozmawiajmy <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Nawigacja główna">
+    <div class="site-nav__desktop">
+      <a href="index.html">Start</a>
+      <a href="sesje-prywatne.html">Sesje prywatne</a>
+      <a class="is-current" aria-current="page" href="repertuar.html">Repertuar</a>
+      <a href="sesje-grupowe.html">Kampanie</a>
+      <a href="pracownia-narracji.html">Pracownia Narracji</a>
+      <a href="index.html#tworczosc">Twórczość</a>
+      <a href="o-mnie.html">O mnie</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <details class="site-nav__mobile">
+      <summary>Menu <span class="site-nav__menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+      <div class="site-nav__mobile-links">
+        <a href="index.html">Start</a>
+        <a href="sesje-prywatne.html">Sesje prywatne</a>
+        <a aria-current="page" href="repertuar.html">Repertuar</a>
+        <a href="sesje-grupowe.html">Kampanie</a>
+        <a href="pracownia-narracji.html">Pracownia Narracji</a>
+        <a href="index.html#tworczosc">Twórczość</a>
+        <a href="o-mnie.html">O mnie</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </details>
+  </nav>
+  <main id="tresc">
+    <section class="rep-hero" aria-labelledby="rep-title">
+      <div class="layout-wrap rep-hero__inner">
+        <div class="rep-hero__copy">
+          <p class="eyebrow eyebrow--light">Kolekcja przygód <span aria-hidden="true">✦</span> Repertuar prywatnych sesji</p>
+          <h1 id="rep-title">Wybierz swoją <em>następną historię.</em></h1>
+          <p>Od krótkich jednostrzałów po rozbudowane kampanie. Przejrzyj scenariusze, które mam w repertuarze, i zapytaj o poprowadzenie wybranej przygody dla Twojej drużyny.</p>
+          <div class="rep-hero__stats" aria-label="Liczba przygód w katalogu">
+            <div><strong>16</strong><span>jednostrzałów</span></div>
+            <div><strong>7</strong><span>kampanii</span></div>
+            <div><strong>23</strong><span>pozycje łącznie</span></div>
+          </div>
+        </div>
+        <div class="rep-hero__image"><span class="rep-hero__image-frame" aria-hidden="true"></span><span class="rep-hero__image-text">Opowieść zaczyna się od wyboru.</span></div>
+      </div>
+    </section>
+    <div class="rep-note"><div class="layout-wrap"><strong>Repertuar ≠ otwarta rekrutacja.</strong> Poniższe kampanie możesz omówić ze mną jako propozycje do rozegrania przez własną drużynę. Informacje o naborach do grup znajdziesz na stronie <a href="sesje-grupowe.html">Kampanie grupowe</a>.</div></div>
+    <section class="rep-catalog layout-wrap" aria-labelledby="catalog-heading">
+      <div class="rep-catalog__heading"><p class="eyebrow">01 <span aria-hidden="true">/</span> Przeglądaj przygody</p><h2 id="catalog-heading">Katalog scenariuszy</h2><p>Wyszukaj tytuł lub wybierz system i format. Wszystkie pozycje zostały podane bez spoilerów.</p></div>
+      <form class="rep-filters" id="rep-filters" role="search" onsubmit="return false">
+        <div class="rep-filter-field rep-filter-field--search"><label for="rep-search">Szukaj tytułu</label><input id="rep-search" type="search" placeholder="Np. Puste Sieci" autocomplete="off"></div>
+        <div class="rep-filter-field"><label for="rep-system">System RPG</label><select id="rep-system"><option value="all">Wszystkie systemy</option><option value="dnd">Dungeons &amp; Dragons 5e</option><option value="warhammer">Warhammer Fantasy 4e</option><option value="cthulhu">Zew Cthulhu</option><option value="cyberpunk">Cyberpunk RED</option></select></div>
+        <div class="rep-filter-field"><label for="rep-kind">Rodzaj</label><select id="rep-kind"><option value="all">Wszystkie formaty</option><option value="one">Jednostrzały</option><option value="campaign">Kampanie</option></select></div>
+        <button class="rep-filter-reset" id="rep-reset" type="reset">Wyczyść filtry <span aria-hidden="true">↺</span></button>
+      </form>
+      <p class="rep-results" id="rep-results" aria-live="polite" role="status">Wyświetlono 23 z 23 przygód</p>
+      <div id="rep-groups">
+        <section class="rep-group" id="cyberpunk" data-group="cyberpunk" aria-labelledby="cyberpunk-title">
+      <div class="rep-group__heading">
+        <div><p class="rep-group__eyebrow">Kolekcja <span aria-hidden="true">✦</span> 6 pozycji</p><h2 id="cyberpunk-title">Cyberpunk RED</h2><p>Technologia, konflikty i ryzykowne decyzje.</p></div>
+        <span class="rep-group__number" aria-hidden="true">06</span>
+      </div>
+      <div class="rep-grid">
+        <article class="rep-card" data-kind="one" data-system="cyberpunk" data-title="ponure żniwa">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Ponure Żniwa</h3>
+          <p class="rep-card__system">Cyberpunk RED</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Ponure%20%C5%BBniwa">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cyberpunk" data-title="zawsze czujni">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Zawsze Czujni</h3>
+          <p class="rep-card__system">Cyberpunk RED</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Zawsze%20Czujni">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cyberpunk" data-title="agenci pożądania">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Agenci Pożądania</h3>
+          <p class="rep-card__system">Cyberpunk RED</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Agenci%20Po%C5%BC%C4%85dania">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cyberpunk" data-title="divy w opałach">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Divy w Opałach</h3>
+          <p class="rep-card__system">Cyberpunk RED</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Divy%20w%20Opa%C5%82ach">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cyberpunk" data-title="kurtka">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Kurtka</h3>
+          <p class="rep-card__system">Cyberpunk RED</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Kurtka">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+        
+        <article class="rep-card" data-kind="campaign" data-system="cyberpunk" data-title="saga żniwiarza">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Saga Żniwiarza</h3>
+          <p class="rep-card__system">Cyberpunk RED · Cykl przygód o Żniwiarzu</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Saga%20%C5%BBniwiarza">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section><section class="rep-group" id="warhammer" data-group="warhammer" aria-labelledby="warhammer-title">
+      <div class="rep-group__heading">
+        <div><p class="rep-group__eyebrow">Kolekcja <span aria-hidden="true">✦</span> 6 pozycji</p><h2 id="warhammer-title">Warhammer Fantasy 4e</h2><p>Przygody i kampanie w Starym Świecie.</p></div>
+        <span class="rep-group__number" aria-hidden="true">06</span>
+      </div>
+      <div class="rep-grid">
+        <article class="rep-card" data-kind="one" data-system="warhammer" data-title="noc krwi">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Noc Krwi</h3>
+          <p class="rep-card__system">Warhammer Fantasy 4e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Noc%20Krwi">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="warhammer" data-title="gdyby wzrok mógł zabijać">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Gdyby Wzrok Mógł Zabijać</h3>
+          <p class="rep-card__system">Warhammer Fantasy 4e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Gdyby%20Wzrok%20M%C3%B3g%C5%82%20Zabija%C4%87">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="warhammer" data-title="jatka w spittlefeld">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Jatka w Spittlefeld</h3>
+          <p class="rep-card__system">Warhammer Fantasy 4e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Jatka%20w%20Spittlefeld">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="warhammer" data-title="śmiertelna przesyłka">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Śmiertelna Przesyłka</h3>
+          <p class="rep-card__system">Warhammer Fantasy 4e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20%C5%9Amiertelna%20Przesy%C5%82ka">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="rep-card" data-kind="campaign" data-system="warhammer" data-title="wewnętrzny wróg">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Wewnętrzny Wróg</h3>
+          <p class="rep-card__system">Warhammer Fantasy 4e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Wewn%C4%99trzny%20Wr%C3%B3g">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="campaign" data-system="warhammer" data-title="opowieści z ubersreiku">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Opowieści z ubersreiku</h3>
+          <p class="rep-card__system">Warhammer Fantasy 4e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Opowie%C5%9Bci%20z%20ubersreiku">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section><section class="rep-group" id="cthulhu" data-group="cthulhu" aria-labelledby="cthulhu-title">
+      <div class="rep-group__heading">
+        <div><p class="rep-group__eyebrow">Kolekcja <span aria-hidden="true">✦</span> 5 pozycji</p><h2 id="cthulhu-title">Zew Cthulhu</h2><p>Tajemnice i śledztwa w świecie grozy.</p></div>
+        <span class="rep-group__number" aria-hidden="true">05</span>
+      </div>
+      <div class="rep-grid">
+        <article class="rep-card" data-kind="one" data-system="cthulhu" data-title="papierkowa robota">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Papierkowa Robota</h3>
+          <p class="rep-card__system">Zew Cthulhu</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Papierkowa%20Robota">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cthulhu" data-title="mumia na folwarku">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Mumia na Folwarku</h3>
+          <p class="rep-card__system">Zew Cthulhu</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Mumia%20na%20Folwarku">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cthulhu" data-title="na skraju mroku">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Na Skraju Mroku</h3>
+          <p class="rep-card__system">Zew Cthulhu</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Na%20Skraju%20Mroku">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="cthulhu" data-title="stepujący nieboszczyk">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Stepujący Nieboszczyk</h3>
+          <p class="rep-card__system">Zew Cthulhu</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Stepuj%C4%85cy%20Nieboszczyk">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="rep-card" data-kind="campaign" data-system="cthulhu" data-title="maski nyarlathothepa">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Maski Nyarlathothepa</h3>
+          <p class="rep-card__system">Zew Cthulhu</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Maski%20Nyarlathothepa">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section><section class="rep-group" id="dnd" data-group="dnd" aria-labelledby="dnd-title">
+      <div class="rep-group__heading">
+        <div><p class="rep-group__eyebrow">Kolekcja <span aria-hidden="true">✦</span> 6 pozycji</p><h2 id="dnd-title">Dungeons &amp; Dragons 5e</h2><p>Fantastyczne wyprawy i pełne przygód kampanie.</p></div>
+        <span class="rep-group__number" aria-hidden="true">06</span>
+      </div>
+      <div class="rep-grid">
+        <article class="rep-card" data-kind="one" data-system="dnd" data-title="puste sieci">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Puste Sieci</h3>
+          <p class="rep-card__system">Dungeons &amp; Dragons 5e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Puste%20Sieci">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="dnd" data-title="kłopoty z goblinami">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Kłopoty z Goblinami</h3>
+          <p class="rep-card__system">Dungeons &amp; Dragons 5e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20K%C5%82opoty%20z%20Goblinami">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="one" data-system="dnd" data-title="opowieść czerwonego smoka">
+          <div class="rep-card__top"><span class="rep-card__type ">Jednostrzał</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Opowieść Czerwonego Smoka</h3>
+          <p class="rep-card__system">Dungeons &amp; Dragons 5e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Opowie%C5%9B%C4%87%20Czerwonego%20Smoka">Zapytaj o jednostrzał <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="rep-card" data-kind="campaign" data-system="dnd" data-title="zaginiona kopalnia phandelvera">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Zaginiona Kopalnia Phandelvera</h3>
+          <p class="rep-card__system">Dungeons &amp; Dragons 5e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Zaginiona%20Kopalnia%20Phandelvera">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="campaign" data-system="dnd" data-title="zstąpienie do avernusa">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Zstąpienie do avernusa</h3>
+          <p class="rep-card__system">Dungeons &amp; Dragons 5e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Zst%C4%85pienie%20do%20avernusa">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+<article class="rep-card" data-kind="campaign" data-system="dnd" data-title="powrót czarnoksiężnika">
+          <div class="rep-card__top"><span class="rep-card__type rep-card__type--campaign">Kampania</span><span class="rep-card__ornament" aria-hidden="true">✧</span></div>
+          <h3>Powrót Czarnoksiężnika</h3>
+          <p class="rep-card__system">Dungeons &amp; Dragons 5e</p>
+          <a class="rep-card__action" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20prowadzenie%20RPG%3A%20Powr%C3%B3t%20Czarnoksi%C4%99%C5%BCnika">Zapytaj o kampanię <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+      </div>
+      <div class="rep-empty" id="rep-empty" hidden><span aria-hidden="true">✧</span><h3>Nie znaleziono przygód</h3><p>Zmień system, rodzaj lub wyszukiwaną frazę.</p></div>
+    </section>
+    <section class="rep-bottom"><div class="layout-wrap rep-bottom__grid"><div><p class="eyebrow eyebrow--light">02 <span aria-hidden="true">/</span> Rezerwacje i współpraca</p><h2>Nie wiesz, co wybrać?</h2><p>Opisz mi swoją drużynę, preferowany klimat i doświadczenie graczy. Pomogę dobrać odpowiednią przygodę oraz omówić termin i warunki prowadzenia.</p></div><a class="home-button home-button--gold" href="mailto:jakubkaminski1808@gmail.com?subject=Dob%C3%B3r%20przygody%20RPG%20dla%20dru%C5%BCyny">Zapytaj o sesję <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="layout-wrap site-footer__inner"><div class="site-footer__brand"><img src="logo-red.png" alt="" loading="lazy"><div><strong>Jakub Kamiński</strong><span>Mistrz Gry · Narracja · Wrocław</span></div></div><div class="site-footer__links"><a href="sesje-prywatne.html">Sesje prywatne</a><a href="sesje-grupowe.html">Kampanie</a><a href="faq.html">FAQ</a><a href="regulamin.html">Regulamin</a><a href="mailto:jakubkaminski1808@gmail.com">Kontakt</a></div><p class="site-footer__copyright">© 2026 Jakub Kamiński · Sesje RPG</p></div></footer>
+  <script src="repertuar.js" defer></script>
+</body>
+</html>

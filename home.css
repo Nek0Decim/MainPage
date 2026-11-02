@@ -243,3 +243,6 @@
 @media (prefers-reduced-motion:reduce) {
   .home-page *,.home-page *::before,.home-page *::after {animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}
 }
+
+/* Nawigacja po dodaniu repertuaru (8 linków na dużych ekranach) */
+@media (min-width:801px) and (max-width:1140px) { .home-page .site-nav__desktop {gap:2px;} .home-page .site-nav__desktop a {font-size:.59rem;padding:15px 7px;letter-spacing:.015em;} }
