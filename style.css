@@ -784,3 +784,137 @@ details[open] .faq-question::after {
     .campaigns-grid { grid-template-columns: 1fr; }
     .regulamin-block { padding: 32px 24px; }
 }
+
+/* ============================= */
+/* KARTY PRZYGÓD */
+/* ============================= */
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 22px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.adventure-card {
+    background: var(--card);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.07), 0 0 0 1px var(--card-border);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.adventure-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.11), 0 0 0 1px rgba(139,30,30,0.18);
+}
+
+.adventure-card-header {
+    padding: 22px 26px 16px;
+    border-bottom: 1px solid var(--card-border);
+    position: relative;
+}
+
+.adventure-card-header::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--gold);
+}
+
+.adventure-type {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.56rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+    padding: 3px 8px;
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 1px;
+}
+
+.adventure-card-header h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    color: var(--primary);
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.adventure-alt {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.adventure-card-body {
+    padding: 18px 26px 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.adventure-card-body p {
+    font-size: 0.97rem;
+    line-height: 1.75;
+    color: #3a2e2a;
+    flex: 1;
+}
+
+.adventure-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 4px;
+}
+
+.adv-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: var(--beige);
+    padding: 4px 10px;
+    border-radius: 1px;
+    border: 1px solid rgba(107,90,78,0.2);
+}
+
+.adventure-card-more {
+    border: 1.5px dashed rgba(139,30,30,0.2);
+    background: transparent;
+    box-shadow: none;
+}
+
+.adventure-card-more:hover {
+    box-shadow: none;
+    transform: none;
+    border-color: rgba(139,30,30,0.35);
+}
+
+.adventure-card-body--center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 180px;
+}
+
+.adventure-card-body--center p {
+    color: var(--text-muted);
+    font-style: italic;
+    flex: 0;
+}
+
+@media (max-width: 900px) {
+    .adventures-grid { grid-template-columns: 1fr; width: 90%; }
+}

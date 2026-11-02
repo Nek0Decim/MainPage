@@ -1,165 +1,215 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
-    <title>Jakub Kamiński – Sesje RPG</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#63191d">
+  <meta name="description" content="Jakub Kamiński — Mistrz Gry, projektant narracji i autor RPG. Sesje prywatne, kampanie, scenariusze na zamówienie i twórczość RPG we Wrocławiu.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Jakub Kamiński | Mistrz Gry i projektant narracji">
+  <meta property="og:description" content="Prowadzę sesje RPG, tworzę autorskie przygody i projektuję historie, na które wpływ mają decyzje graczy.">
+  <meta property="og:image" content="logo-red.png">
+  <title>Jakub Kamiński | Mistrz Gry · Narracja · RPG Wrocław</title>
+  <link rel="icon" type="image/png" href="logo-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Zachowujemy dotychczasowy arkusz CSS: pozostałe podstrony działają bez zmian. -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body class="home-page">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
 
-<header>
-    <div class="header-inner">
-        <img src="logo-red.png" alt="Logo">
-        <div class="title-group">
-            <h1>Jakub Kamiński</h1>
-            <p>Mistrz Gry · Narracja · Wrocław</p>
-        </div>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-brand" aria-label="Jakub Kamiński — strona główna">
+        <img src="logo-red.png" width="88" height="88" alt="" decoding="async">
+        <span class="site-brand__text">
+          <span class="site-brand__name">Jakub Kamiński</span>
+          <span class="site-brand__subtitle">Mistrz Gry · Narracja · Wrocław</span>
+        </span>
+      </a>
+      <a class="header-contact" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20sesj%C4%99%20RPG">Porozmawiajmy <span aria-hidden="true">↗</span></a>
     </div>
-</header>
+  </header>
 
-<nav>
-    <div class="nav-inner">
-        <a href="index.html" class="active">Strona główna</a>
-        <a href="o-mnie.html">O mnie</a>
+  <nav class="site-nav" aria-label="Nawigacja główna">
+    <div class="site-nav__desktop">
+      <a class="is-current" aria-current="page" href="index.html">Start</a>
+      <a href="sesje-prywatne.html">Sesje prywatne</a>
+      <a href="sesje-grupowe.html">Kampanie</a>
+      <a href="pracownia-narracji.html">Pracownia Narracji</a>
+      <a href="#tworczosc">Twórczość</a>
+      <a href="o-mnie.html">O mnie</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <details class="site-nav__mobile">
+      <summary>Menu <span class="site-nav__menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+      <div class="site-nav__mobile-links">
+        <a aria-current="page" href="index.html">Start</a>
         <a href="sesje-prywatne.html">Sesje prywatne</a>
-        <a href="sesje-grupowe.html">Sesje grupowe</a>
+        <a href="sesje-grupowe.html">Kampanie</a>
         <a href="pracownia-narracji.html">Pracownia Narracji</a>
+        <a href="#tworczosc">Twórczość</a>
+        <a href="o-mnie.html">O mnie</a>
         <a href="faq.html">FAQ</a>
-    </div>
-</nav>
+      </div>
+    </details>
+  </nav>
 
-<div class="hero">
-    <p class="hero-quote">„Każda decyzja przy stole tworzy historię, której nikt wcześniej nie opowiedział."</p>
-    <div class="hero-divider"></div>
-    <p class="hero-sub">Sesje RPG · Kampanie · Scenariusze na zamówienie</p>
-</div>
+  <main id="tresc">
+    <section class="main-hero" aria-labelledby="hero-title">
+      <div class="main-hero__inner layout-wrap">
+        <div class="main-hero__copy">
+          <p class="eyebrow eyebrow--light"><span class="tiny-star" aria-hidden="true">✦</span> Mistrz Gry · Autor RPG · Projektant narracji</p>
+          <h1 id="hero-title">Opowieści, w których <em>decyzje mają znaczenie.</em></h1>
+          <p class="main-hero__intro">Prowadzę sesje RPG, tworzę autorskie scenariusze i buduję światy, które reagują na wybory graczy. Zapraszam do wspólnego opowiadania historii.</p>
+          <div class="action-row">
+            <a class="home-button home-button--gold" href="sesje-prywatne.html">Zamów sesję <span aria-hidden="true">↗</span></a>
+            <a class="home-button home-button--light-outline" href="#tworczosc">Poznaj twórczość <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="main-hero__smallprint"><span aria-hidden="true">✧</span> Wrocław i okolice <span class="smallprint-sep" aria-hidden="true">·</span> Rozgrywki stacjonarne oraz wybrane kampanie online</div>
+        </div>
+        <div class="main-hero__art" aria-hidden="true">
+          <!-- Opcjonalna fotografia w images/stock-hero.jpg (CSS ma estetyczne tło zastępcze). -->
+          <div class="main-hero__frame">
+            <span class="frame-corner frame-corner--tl"></span>
+            <span class="frame-corner frame-corner--tr"></span>
+            <span class="frame-corner frame-corner--bl"></span>
+            <span class="frame-corner frame-corner--br"></span>
+            <div class="main-hero__sigil"><img src="logo-red.png" alt=""></div>
+            <p class="art-motto">Historie rodzą się<br>przy stole</p>
+            <span class="frame-ornament">✦ &nbsp; ✧ &nbsp; ✦</span>
+          </div>
+        </div>
+      </div>
+      <div class="main-hero__line" aria-hidden="true"></div>
+    </section>
 
-<section class="section">
-    <p class="section-title">Czym mogę Ci służyć</p>
-
-    <div class="block">
-        <div class="about-image">
-            <img src="kim-jestem.png" alt="Jakub Kamiński">
-        </div>
-        <div class="content">
-            <span class="content-tag">Mistrz Gry</span>
-            <h2>O mnie</h2>
-            <p>
-                Prowadzę sesje RPG od lat — dla młodzieży i dorosłych,
-                na konwentach i przy kameralnych stołach.
-                Ukończyłem Projektowanie Gier, specjalizuję się w narracji interaktywnej
-                i budowie scenariuszy, które reagują na decyzje graczy.
-            </p>
-            <a href="o-mnie.html" class="button">Kim jestem</a>
-        </div>
-    </div>
-
-    <div class="block reverse">
-        <div class="about-image">
-            <img src="styl-prowadzenia.png" alt="Sesja na zamówienie">
-        </div>
-        <div class="content">
-            <span class="content-tag">Oferta</span>
-            <h2>Sesje prywatne</h2>
-            <p>
-                Sesje tworzone na zamówienie — dopasowane do wieku,
-                poziomu doświadczenia i klimatu, jaki chcecie przeżyć.
-                Jednorazowa przygoda, wydarzenie okolicznościowe
-                lub początek długiej kampanii.
-            </p>
-            <a href="sesje-prywatne.html" class="button">Zobacz ofertę</a>
-        </div>
+    <div class="promise-strip" aria-label="Najważniejsze informacje">
+      <div class="layout-wrap promise-strip__inner">
+        <div><span class="promise-strip__symbol" aria-hidden="true">✧</span> Sesje dla nowych i doświadczonych graczy</div>
+        <div><span class="promise-strip__symbol" aria-hidden="true">✧</span> Scenariusze gotowe i autorskie</div>
+        <div><span class="promise-strip__symbol" aria-hidden="true">✧</span> Rozgrywka dopasowana do drużyny</div>
+      </div>
     </div>
 
-    <div class="block">
-        <div class="about-image">
-            <img src="inspiracje.png" alt="Pracownia Narracji">
+    <section id="oferta" class="home-section offerings layout-wrap" aria-labelledby="oferta-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 <span aria-hidden="true">/</span> Wyrusz w przygodę</p>
+        <h2 id="oferta-title">W czym mogę Ci pomóc?</h2>
+        <p>Jedna pasja, wiele sposobów na wspólne opowiadanie historii. Wybierz to, czego potrzebujesz.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <div class="offer-card__visual offer-card__visual--sessions"><span class="offer-card__symbol" aria-hidden="true">✦</span><span class="offer-card__number">I</span></div>
+          <div class="offer-card__body">
+            <p class="mini-label">Dla Twojej drużyny</p>
+            <h3>Sesje prywatne</h3>
+            <p>Jednostrzał, wyjątkowe wydarzenie lub początek dłuższej kampanii. Gotowe przygody i opowieści przygotowane na zamówienie.</p>
+            <a class="text-link" href="sesje-prywatne.html">Poznaj ofertę <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-card__visual offer-card__visual--campaigns"><span class="offer-card__symbol" aria-hidden="true">✧</span><span class="offer-card__number">II</span></div>
+          <div class="offer-card__body">
+            <p class="mini-label">Dla szukających drużyny</p>
+            <h3>Kampanie grupowe</h3>
+            <p>Dołącz do wspólnej opowieści. Poznaj planowane kampanie, ich klimat, zasady uczestnictwa i informacje o naborach.</p>
+            <a class="text-link" href="sesje-grupowe.html">Przejdź do kampanii <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-card__visual offer-card__visual--studio"><span class="offer-card__symbol" aria-hidden="true">✦</span><span class="offer-card__number">III</span></div>
+          <div class="offer-card__body">
+            <p class="mini-label">Dla graczy i twórców</p>
+            <h3>Pracownia Narracji</h3>
+            <p>Autorskie scenariusze, historia postaci, lore świata i konstrukcja kampanii. Pomogę nadać Twoim pomysłom formę.</p>
+            <a class="text-link" href="pracownia-narracji.html">Zobacz możliwości <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tworczosc" class="home-section creations" aria-labelledby="tworczosc-title">
+      <div class="layout-wrap">
+        <div class="section-heading section-heading--row">
+          <div>
+            <p class="eyebrow">02 <span aria-hidden="true">/</span> Poza stołem</p>
+            <h2 id="tworczosc-title">Moja twórczość</h2>
+          </div>
+          <p>Przygody do rozegrania, historie do odkrycia i myśli o tworzeniu światów.</p>
         </div>
-        <div class="content">
-            <span class="content-tag">Usługi pisarskie</span>
-            <h2>Pracownia Narracji</h2>
-            <p>
-                Piszę scenariusze, historie postaci i lore światów na zamówienie.
-                Jeśli masz pomysł, któremu brakuje formy —
-                albo świat, który potrzebuje głębi —
-                mogę to zbudować razem z Tobą.
-            </p>
-            <a href="pracownia-narracji.html" class="button">Sprawdź ofertę</a>
+        <div class="creation-grid">
+          <article class="creation-feature">
+            <div class="creation-feature__art">
+              <div class="book-mock" aria-hidden="true"><span class="book-mock__symbol">✦</span><span class="book-mock__title">Przygoda<br>RPG</span><span class="book-mock__ornament">✧ ✧ ✧</span></div>
+            </div>
+            <div class="creation-feature__body">
+              <p class="mini-label mini-label--gold">Wydana publikacja</p>
+              <h3>Moja pierwsza opublikowana przygoda</h3>
+              <p>Tworzę również materiały RPG do samodzielnego wykorzystania przez innych Mistrzów Gry. Pierwsza przygoda jest już wydana, a z czasem pojawią się kolejne projekty.</p>
+              <p class="creation-feature__hint">Miejsce na tytuł, okładkę i odnośnik do publikacji na DriveThruRPG.</p>
+              <a class="text-link text-link--light" href="sesje-prywatne.html">Poznaj przygody z repertuaru <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="blog-promo" id="zapiski">
+            <div class="blog-promo__top"><span class="blog-promo__icon" aria-hidden="true">✒</span><span class="mini-label">Miejsce na artykuły</span></div>
+            <h3>Zapiski<br><em>Mistrza Gry</em></h3>
+            <p>O projektowaniu przygód, improwizacji, narracji i tym, co dzieje się poza przygotowanym scenariuszem.</p>
+            <div class="blog-promo__topics"><span>Warsztat MG</span><span>Projektowanie narracji</span><span>Kulisy twórczości</span></div>
+            <p class="blog-promo__footnote">Sekcja przygotowana pod przyszłe wpisy. Gdy opublikujesz pierwszy artykuł, pojawi się tutaj jego zapowiedź.</p>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <section class="home-section campaign-preview layout-wrap" aria-labelledby="kampanie-title">
+      <div class="campaign-preview__box">
+        <div class="campaign-preview__accent" aria-hidden="true">✦</div>
+        <div class="campaign-preview__copy">
+          <p class="eyebrow">03 <span aria-hidden="true">/</span> Wspólne historie</p>
+          <h2 id="kampanie-title">Znajdź miejsce przy stole</h2>
+          <p>Nie masz własnej drużyny? Sprawdź opisy kampanii grupowych, dowiedz się, jak wygląda uczestnictwo i zapytaj o aktualne możliwości dołączenia.</p>
+          <a class="home-button home-button--red" href="sesje-grupowe.html">Sprawdź kampanie <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="campaign-preview__image" aria-hidden="true"><span class="campaign-preview__rune">✧</span><span class="campaign-preview__caption">Twoja historia<br>zaczyna się tutaj.</span></div>
+      </div>
+    </section>
+
+    <section id="o-mnie" class="home-section about-teaser layout-wrap" aria-labelledby="o-mnie-title">
+      <div class="about-teaser__aside">
+        <p class="eyebrow">04 <span aria-hidden="true">/</span> Poznaj Mistrza Gry</p>
+        <div class="about-teaser__emblem"><img src="logo-red.png" alt="" loading="lazy"></div>
+      </div>
+      <div class="about-teaser__copy">
+        <h2 id="o-mnie-title">Historie są najlepsze, kiedy tworzymy je razem.</h2>
+        <p>Nazywam się Jakub Kamiński. Prowadzę sesje dla młodzieży i dorosłych, przy kameralnych stołach i na konwentach. Ukończyłem Projektowanie Gier, a szczególnie interesuje mnie narracja interaktywna — opowieści, które zmieniają się pod wpływem decyzji uczestników.</p>
+        <blockquote>„Nie jestem po to, by być wrogiem graczy. Świat bywa brutalny — ale trudności istnieją po to, by zwycięstwa miały znaczenie”.</blockquote>
+        <a class="text-link" href="o-mnie.html">Poznaj mój styl prowadzenia <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-banner" aria-labelledby="kontakt-title">
+      <div class="layout-wrap contact-banner__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Rozpocznijmy wspólną opowieść</p>
+          <h2 id="kontakt-title">Masz pomysł na przygodę?</h2>
+          <p>Chcesz zamówić sesję, zapytać o kampanię albo porozmawiać o współpracy pisarskiej? Napisz do mnie.</p>
+        </div>
+        <a class="home-button home-button--gold" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20ze%20strony%20RPG">Napisz wiadomość <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout-wrap site-footer__inner">
+      <div class="site-footer__brand"><img src="logo-red.png" alt="" loading="lazy"><div><strong>Jakub Kamiński</strong><span>Mistrz Gry · Narracja · Wrocław</span></div></div>
+      <div class="site-footer__links"><a href="o-mnie.html">O mnie</a><a href="faq.html">FAQ</a><a href="regulamin.html">Regulamin</a><a href="mailto:jakubkaminski1808@gmail.com">Kontakt</a></div>
+      <p class="site-footer__copyright">© 2026 Jakub Kamiński · Sesje RPG</p>
     </div>
-
-</section>
-
-<!-- KAMPANIE -->
-<section class="campaigns-section">
-    <p class="section-title">Aktywne kampanie grupowe</p>
-
-    <div class="campaigns-grid">
-
-        <div class="campaign-card">
-            <div class="campaign-card-header">
-                <div class="campaign-status active">
-                    <span class="status-dot"></span> Rekrutacja otwarta
-                </div>
-                <h3>Przykładowa Kampania</h3>
-                <p class="campaign-system">Dungeons & Dragons 5e</p>
-            </div>
-            <div class="campaign-card-body">
-                <p>Krótki opis klimatu i fabuły kampanii — czego gracze mogą się spodziewać, jaki nastrój, jaki świat.</p>
-                <div class="campaign-meta">
-                    <div class="campaign-meta-item">Gracze<strong>3 / 5</strong></div>
-                    <div class="campaign-meta-item">Częstotliwość<strong>Co 2 tygodnie</strong></div>
-                    <div class="campaign-meta-item">Poziom<strong>Początkujący</strong></div>
-                </div>
-            </div>
-            <div class="campaign-card-footer">
-                <a href="sesje-grupowe.html" class="button">Szczegóły kampanii</a>
-            </div>
-        </div>
-
-        <div class="campaign-card is-closed">
-            <div class="campaign-card-header">
-                <div class="campaign-status full">
-                    <span class="status-dot"></span> Komplet graczy
-                </div>
-                <h3>Druga Kampania</h3>
-                <p class="campaign-system">Zew Cthulhu</p>
-            </div>
-            <div class="campaign-card-body">
-                <p>Krótki opis klimatu tej kampanii. Możliwe dołączenie na liście oczekujących.</p>
-                <div class="campaign-meta">
-                    <div class="campaign-meta-item">Gracze<strong>5 / 5</strong></div>
-                    <div class="campaign-meta-item">Częstotliwość<strong>Co tydzień</strong></div>
-                    <div class="campaign-meta-item">Poziom<strong>Zaawansowany</strong></div>
-                </div>
-            </div>
-            <div class="campaign-card-footer">
-                <a href="sesje-grupowe.html" class="button">Szczegóły kampanii</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<footer>
-    <div class="footer-inner">
-        <img src="logo-red.png" alt="Logo" class="footer-logo">
-        <p class="footer-contact">
-            <a href="mailto:jakubkaminski1808@gmail.com">jakubkaminski1808@gmail.com</a>
-            &nbsp;·&nbsp;
-            <a href="tel:+48735780951">+48 735 780 951</a>
-        </p>
-        <div class="footer-links">
-            <a href="regulamin.html">Regulamin</a>
-        </div>
-        <p>© 2025 Jakub Kamiński – Sesje RPG · Wrocław</p>
-    </div>
-</footer>
-
+  </footer>
 </body>
 </html>
