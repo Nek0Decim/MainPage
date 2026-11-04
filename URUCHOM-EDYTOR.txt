@@ -1,0 +1,16 @@
+PRACOWNIA PUBLIKACJI RPG — START
+================================
+
+Windows:
+1. Rozpakuj folder projektu.
+2. Kliknij dwa razy start-edytor.bat.
+3. Otworzy się panel w przeglądarce.
+
+macOS / Linux:
+1. Uruchom ./start-edytor.sh albo python3 edytor.py.
+
+Wymagany jest Python 3.10+ (bez dodatkowych bibliotek).
+Dalsze wskazówki: INSTRUKCJA-EDYTOR.md
+
+Publikacja artykułu nie robi automatycznie commita/pusha.
+GitHub nadal aktualizujesz samodzielnie.

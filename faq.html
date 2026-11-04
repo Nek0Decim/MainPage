@@ -1,192 +1,205 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ – Jakub Kamiński</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#63191d">
+  <meta name="description" content="FAQ Jakuba Kamińskiego: sesje RPG, bezpłatna sesja 0, tworzenie postaci, cennik, rezerwacje, Pracownia Narracji i publikacje RPG.">
+  <meta property="og:type" content="website"><meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="FAQ | Jakub Kamiński — sesje i twórczość RPG">
+  <meta property="og:description" content="Zasady sesji RPG, przygotowania postaci, rezerwacji i współpracy pisarskiej. Wszystko w jednym miejscu.">
+  <meta property="og:image" content="logo-red.png">
+  <title>FAQ — Sesje RPG i Pracownia Narracji | Jakub Kamiński</title>
+  <link rel="icon" type="image/png" href="logo-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="faq-new.css">
+  <script src="faq-search.js" defer></script>
 </head>
-<body>
-
-<header>
-    <div class="header-inner">
-        <img src="logo-red.png" alt="Logo">
-        <div class="title-group">
-            <h1>Jakub Kamiński</h1>
-            <p>Mistrz Gry · Narracja · Wrocław</p>
-        </div>
-    </div>
-</header>
-
-<nav>
-    <div class="nav-inner">
-        <a href="index.html">Strona główna</a>
-        <a href="o-mnie.html">O mnie</a>
+<body class="home-page faq-page">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header"><div class="site-header__inner">
+    <a href="index.html" class="site-brand" aria-label="Jakub Kamiński — strona główna">
+      <img src="logo-red.png" width="74" height="74" alt="" decoding="async">
+      <span class="site-brand__text"><span class="site-brand__name">Jakub Kamiński</span><span class="site-brand__subtitle">Mistrz Gry · Narracja · Wrocław</span></span>
+    </a>
+    <a class="header-contact" href="mailto:jakubkaminski1808@gmail.com?subject=Pytanie%20o%20sesje%20RPG">Zapytaj mnie <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <nav class="site-nav" aria-label="Nawigacja główna"><div class="site-nav__desktop">
+        <a href="index.html">Start</a>
         <a href="sesje-prywatne.html">Sesje prywatne</a>
-        <a href="sesje-grupowe.html">Sesje grupowe</a>
+        <a href="repertuar.html">Repertuar</a>
         <a href="pracownia-narracji.html">Pracownia Narracji</a>
-        <a href="faq.html" class="active">FAQ</a>
-    </div>
-</nav>
-
-<div class="page-header">
-    <h2>Często zadawane pytania</h2>
-    <div class="page-header-divider"></div>
-    <p>Zanim napiszesz — może znajdziesz odpowiedź tutaj.</p>
-</div>
-
-<section class="faq-section">
-
-    <div class="faq-group">
-        <p class="faq-group-title">Zanim zaczniesz grać</p>
-
-        <details class="faq-item">
-            <summary class="faq-question">Czy muszę mieć doświadczenie w RPG?</summary>
-            <p class="faq-answer">
-                Nie. Prowadzę sesje zarówno dla zupełnych nowicjuszy, jak i dla doświadczonych graczy.
-                Przed sesją poświęcam czas na wytłumaczenie zasad i mechanik — możesz przyjść z zerową wiedzą
-                i wyjść z gotową postacią i pierwszą przygodą za sobą.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Jakie systemy prowadzisz?</summary>
-            <p class="faq-answer">
-                Prowadzę szerokie spektrum systemów:<br><br>
-                <strong>Dungeons &amp; Dragons 5e</strong> · <strong>Warhammer Fantasy 4e</strong> · <strong>Call of Cthulhu 7e</strong> · <strong>Wampir: Maskarada 5e</strong> · <strong>Wiedźmin RPG</strong> · <strong>Cyberpunk RED</strong> · <strong>City of Mist</strong> · <strong>Fabula Ultima</strong> · <strong>Wrath &amp; Glory</strong> · <strong>Nosacze Gra Fabularna</strong><br><br>
-                Jeśli interesujesz się innym systemem — zapytaj, chętnie omówimy możliwości.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Co muszę ze sobą przynieść?</summary>
-            <p class="faq-answer">
-                Nic poza sobą i dobrym nastawieniem. Mam kostki, karty postaci i materiały pomocnicze.
-                Jeśli wolisz mieć własne — oczywiście możesz zabrać.
-                Jeśli korzystamy z tworzenia postaci po mojej stronie, dostajesz gotową kartę przed sesją.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Czy sesje są stacjonarne czy online?</summary>
-            <p class="faq-answer">
-                Sesje prywatne prowadzę stacjonarnie we Wrocławiu lub z dojazdem (koszt dojazdu poza Wrocław: 50 zł).
-                Sesje grupowe mogą być stacjonarne lub online — szczegóły zawsze podaję przy konkretnej kampanii.
-            </p>
-        </details>
-    </div>
-
-    <div class="faq-group">
-        <p class="faq-group-title">Sesje prywatne</p>
-
-        <details class="faq-item">
-            <summary class="faq-question">Ile kosztuje sesja i jak wygląda płatność?</summary>
-            <p class="faq-answer">
-                Sesja do 5 godzin kosztuje 50 zł/h, każda kolejna godzina powyżej 5h — 60 zł/h.
-                Doliczam 25 zł za każdą osobę powyżej 4 graczy oraz 25 zł za tworzenie postaci po mojej stronie.<br><br>
-                Przyjmuję płatności <strong>gotówką</strong>, <strong>kartą</strong> oraz przez <strong>SumUp</strong>.
-                Na życzenie wystawiam fakturę.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Jak długo trwa sesja?</summary>
-            <p class="faq-answer">
-                Standardowa sesja trwa od 3 do 5 godzin. Przy większych kampaniach lub specjalnych wydarzeniach
-                może być dłuższa — ustalamy to przed rezerwacją terminu.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Czy scenariusz musi być autorski, czy mogę wybrać gotową przygodę?</summary>
-            <p class="faq-answer">
-                Masz wybór. Do części systemów mam gotowe, sprawdzone przygody — możesz wybrać jedną z nich
-                i zagrać bez dodatkowego czasu przygotowania. Jeśli wolisz coś szytego na miarę —
-                piszę scenariusze autorskie dopasowane do Twojej drużyny, klimatu i oczekiwań.<br><br>
-                Gotowe przygody mam dostępne m.in. do D&amp;D 5e, Call of Cthulhu, Warhammera i kilku innych —
-                przy rezerwacji powiem Ci, co aktualnie mam w ofercie.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Czy mogę zamówić sesję jako prezent?</summary>
-            <p class="faq-answer">
-                Tak i to jeden z najpopularniejszych powodów kontaktu. Sesja jako urodziny, wieczór kawalerski
-                czy teambuilding — wszystko da się zorganizować. Napisz do mnie z datą i liczbą osób.
-            </p>
-        </details>
-    </div>
-
-    <div class="faq-group">
-        <p class="faq-group-title">Sesje grupowe i kampanie</p>
-
-        <details class="faq-item">
-            <summary class="faq-question">Jak dołączyć do kampanii grupowej?</summary>
-            <p class="faq-answer">
-                Każda aktywna kampania ma przy sobie przycisk zgłoszenia. Wystarczy napisać —
-                odpiszę z informacją o dostępności miejsc, terminach i wymaganiach.
-                Przy kampaniach pełnych możesz trafić na listę oczekujących.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Czy kampanie są płatne?</summary>
-            <p class="faq-answer">
-                Szczegóły finansowe podaję przy każdej kampanii osobno — zależy od formatu,
-                częstotliwości i czasu trwania sesji. Wszystko ustalamy przed pierwszą sesją.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Co się dzieje, gdy nie mogę pojawić się na sesji?</summary>
-            <p class="faq-answer">
-                Rozumiem, że życie bywa nieprzewidywalne. Proszę o informację z możliwie dużym wyprzedzeniem.
-                Szczegóły dotyczące nieobecności i ich wpływu na kampanię znajdziesz w regulaminie
-                oraz omówimy je przed dołączeniem do grupy.
-            </p>
-        </details>
-    </div>
-
-    <div class="faq-group">
-        <p class="faq-group-title">Pracownia Narracji</p>
-
-        <details class="faq-item">
-            <summary class="faq-question">Ile czasu zajmuje napisanie scenariusza lub historii postaci?</summary>
-            <p class="faq-answer">
-                Zależy od zakresu i złożoności materiału. Krótka historia postaci to zazwyczaj kilka dni,
-                rozbudowany scenariusz z mapą sytuacji i NPCami — od tygodnia do dwóch.
-                Termin ustalamy przed rozpoczęciem pracy.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">Czy mogę poprosić o poprawki?</summary>
-            <p class="faq-answer">
-                Tak. Praca nad materiałem to proces — poprawki są wliczone w cenę i traktuję je
-                jako normalną część współpracy, nie dodatkowy koszt.
-            </p>
-        </details>
-    </div>
-
-</section>
-
-<footer>
-    <div class="footer-inner">
-        <img src="logo-red.png" alt="Logo" class="footer-logo">
-        <p class="footer-contact">
-            <a href="mailto:jakubkaminski1808@gmail.com">jakubkaminski1808@gmail.com</a>
-            &nbsp;·&nbsp;
-            <a href="tel:+48735780951">+48 735 780 951</a>
-        </p>
-        <div class="footer-links">
-            <a href="regulamin.html">Regulamin</a>
-        </div>
-        <p>© 2025 Jakub Kamiński – Sesje RPG · Wrocław</p>
-    </div>
-</footer>
-
-<a href="index.html" class="back-button">← Powrót</a>
-
+        <a href="tworczosc.html">Twórczość</a>
+        <a href="o-mnie.html">O mnie</a>
+        <a href="faq.html" class="is-current" aria-current="page">FAQ</a>
+    </div><details class="site-nav__mobile"><summary>Menu <span class="site-nav__menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary><div class="site-nav__mobile-links">
+          <a href="index.html">Start</a>
+          <a href="sesje-prywatne.html">Sesje prywatne</a>
+          <a href="repertuar.html">Repertuar</a>
+          <a href="pracownia-narracji.html">Pracownia Narracji</a>
+          <a href="tworczosc.html">Twórczość</a>
+          <a href="o-mnie.html">O mnie</a>
+          <a href="faq.html" aria-current="page">FAQ</a>
+    </div></details></nav>
+  <main id="tresc">
+    <section class="faq-hero" aria-labelledby="faq-title"><div class="layout-wrap faq-hero__inner">
+      <div><p class="faq-hero__eyebrow">✦ &nbsp; Przewodnik po współpracy</p><h1 id="faq-title">Pytania i <em>odpowiedzi.</em></h1>
+      <p>Sesja 0, bohaterowie, terminy, ceny i tworzenie scenariuszy. Zebrałem tutaj zasady, które warto znać, zanim wspólnie zasiądziemy do stołu.</p>
+      <a class="faq-hero__contact" href="mailto:jakubkaminski1808@gmail.com?subject=Pytanie%20o%20sesje%20RPG">Nie znalazłeś odpowiedzi? Napisz do mnie <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="faq-hero__emblem" aria-hidden="true"><span class="faq-hero__star">✦</span><img src="logo-red.png" alt=""><span>Opowieść zaczyna się od pytania</span></div>
+    </div></section>
+    <div class="faq-highlight"><div class="layout-wrap faq-highlight__inner"><span><strong>Sesja 0:</strong> bezpłatna</span><span><strong>Karty z repertuaru:</strong> bez dopłaty</span><span><strong>Scenariusz do prowadzenia:</strong> w cenie sesji</span></div></div>
+    <section class="faq-content layout-wrap" aria-label="Lista pytań">
+      <div class="faq-content__intro"><p class="eyebrow">Łatwo znaleźć odpowiedź</p><h2>Wybierz temat lub wpisz pytanie</h2><p>Rozwiń dowolny punkt, żeby przeczytać szczegóły. Możesz też przeszukać cały poradnik.</p></div>
+      <div class="faq-searchbox"><label for="faq-search">Wyszukaj w FAQ</label><div class="faq-searchbox__field"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="faq-search" type="search" placeholder="Np. sesja 0, zaliczka, postać..." autocomplete="off"><button type="button" id="faq-clear" aria-label="Wyczyść wyszukiwanie" hidden>Wyczyść</button></div><p class="faq-searchbox__status" id="faq-status" role="status" aria-live="polite"></p></div>
+      <nav class="faq-topics" aria-label="Przejdź do tematu">
+<a href="#start">Pierwsze kroki<span aria-hidden="true">↗</span></a>
+<a href="#postacie">Postacie i sesja 0<span aria-hidden="true">↗</span></a>
+<a href="#sesje">Sesje prywatne i repertuar<span aria-hidden="true">↗</span></a>
+<a href="#organizacja">Cennik, rezerwacje i organizacja<span aria-hidden="true">↗</span></a>
+<a href="#pracownia">Pracownia Narracji<span aria-hidden="true">↗</span></a>
+<a href="#publikacje">Publikacje i twórczość<span aria-hidden="true">↗</span></a>
+      </nav><div class="faq-content__chapters">
+<section class="faq-chapter" id="start" aria-labelledby="title-start" data-faq-group>
+        <div class="faq-chapter__heading"><span class="faq-chapter__number">01</span><div><p class="faq-chapter__eyebrow">Zanim zasiądziesz do stołu</p><h2 id="title-start">Pierwsze kroki</h2></div></div>
+        <div class="faq-chapter__questions"><details class="faq-question-card" data-faq-item>
+          <summary>Czy muszę mieć doświadczenie w RPG?</summary>
+          <div class="faq-answer-text"><p>Nie. Prowadzę sesje zarówno dla osób, które dopiero zaczynają swoją przygodę z RPG, jak i dla doświadczonych graczy. W razie potrzeby tłumaczę zasady i pomagam wejść w świat gry.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Jakie systemy RPG prowadzisz?</summary>
+          <div class="faq-answer-text"><p>Prowadzę <strong>Dungeons &amp; Dragons 5e</strong>, <strong>Cyberpunk RED</strong>, <strong>Zew Cthulhu</strong>, <strong>Miasto Mgły</strong>, <strong>Warhammer Fantasy 4e</strong>, <strong>Wampir: Maskarada</strong>, <strong>Nosacze – Gra Fabularna</strong>, <strong>Wiedźmin – Gra Fabularna</strong>, <strong>Wrath &amp; Glory</strong>, <strong>Fabula Ultima</strong> oraz <strong>Pendragon</strong>. Część gotowych scenariuszy znajdziesz w <a href="repertuar.html">repertuarze RPG</a>.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy sesje mogą odbywać się online i stacjonarnie?</summary>
+          <div class="faq-answer-text"><p>Tak. Wszystkie oferowane przeze mnie systemy mogę prowadzić online lub stacjonarnie. Na miejscu prowadzę sesje we Wrocławiu i z dojazdem; dokładną lokalizację ustalamy przed rezerwacją.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Od jakiego wieku można wziąć udział w sesji?</summary>
+          <div class="faq-answer-text"><p>To zależy od systemu i tematyki konkretnej przygody. Prowadzę sesje w różnych grupach wiekowych, orientacyjnie <strong>7+, 10+, 14+, 16+ i 18+</strong>. Odpowiedni system, poziom treści i warunki udziału uzgadniamy przed grą.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Co muszę przynieść na sesję?</summary>
+          <div class="faq-answer-text"><p>Zazwyczaj nic szczególnego: mam potrzebne materiały pomocnicze, kostki i karty postaci. Jeżeli masz własne akcesoria albo gotową postać, możesz je oczywiście zabrać. Szczegóły zależą od systemu i formatu sesji.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy przed grą ustalacie granice komfortu?</summary>
+          <div class="faq-answer-text"><p>Tak. Rozmawiamy o klimacie kampanii, trudnych tematach i kwestiach, których gracze nie chcą poruszać podczas rozgrywki. Ważne jest dla mnie, żeby wszyscy wiedzieli, na jaki rodzaj historii się umawiamy i mogli sygnalizować swój dyskomfort.</p></div>
+        </details></div>
+      </section>
+<section class="faq-chapter" id="postacie" aria-labelledby="title-postacie" data-faq-group>
+        <div class="faq-chapter__heading"><span class="faq-chapter__number">02</span><div><p class="faq-chapter__eyebrow">Przygotowanie bohaterów bez nieporozumień</p><h2 id="title-postacie">Postacie i sesja 0</h2></div></div>
+        <div class="faq-chapter__questions"><details class="faq-question-card" data-faq-item>
+          <summary>Czy gotowe karty postaci do jednostrzałów są dodatkowo płatne?</summary>
+          <div class="faq-answer-text"><p><strong>Nie.</strong> Jeżeli korzystamy z przygotowanych wcześniej postaci albo wspólnie wypełniamy karty, nie naliczam za to osobnej opłaty. Podobnie standardowa pomoc początkującym i tłumaczenie mechaniki są częścią prowadzenia.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Kiedy obowiązuje opłata 25 zł za przygotowanie postaci?</summary>
+          <div class="faq-answer-text"><p>Tylko gdy drużyna prosi mnie o <strong>samodzielne przygotowanie całego kompletu kart postaci</strong> przed rozgrywką na podstawie podanych założeń. Opłata wynosi <strong>25 zł za całość kart</strong>, a nie za każdą kartę z osobna. Takie przygotowanie ustalamy wcześniej.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Co zawiera przygotowanie postaci na zamówienie?</summary>
+          <div class="faq-answer-text"><p>Przede wszystkim mechanikę postaci: statystyki, umiejętności i inne elementy wymagane przez system. Tam, gdzie ma to sens, np. w D&amp;D lub Cyberpunku RED, mogę również zaproponować charakter i zarys historii. <strong>Te elementy są opcjonalne</strong> — gracz może je swobodnie modyfikować.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy mogę wprowadzić zmiany do przygotowanej postaci?</summary>
+          <div class="faq-answer-text"><p>Tak. <strong>Drobne poprawki są możliwe do dnia sesji.</strong> Większy zakres zmian najlepiej omówić z wyprzedzeniem, aby przygotowane postacie odpowiadały oczekiwaniom drużyny.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czym jest sesja 0 i czy trzeba za nią płacić?</summary>
+          <div class="faq-answer-text"><p><strong>Sesja 0 jest bezpłatna.</strong> Poświęcamy ją na tworzenie postaci, omówienie zasad, klimatu kampanii oraz tematów i granic komfortu uczestników. Może trwać tyle co zwykła sesja albo krócej. Nie trzeba tworzyć postaci od zera — można przyjść z własną.</p></div>
+        </details></div>
+      </section>
+<section class="faq-chapter" id="sesje" aria-labelledby="title-sesje" data-faq-group>
+        <div class="faq-chapter__heading"><span class="faq-chapter__number">03</span><div><p class="faq-chapter__eyebrow">Wybór przygody i sposób prowadzenia</p><h2 id="title-sesje">Sesje prywatne i repertuar</h2></div></div>
+        <div class="faq-chapter__questions"><details class="faq-question-card" data-faq-item>
+          <summary>Czym różni się jednostrzał od kampanii?</summary>
+          <div class="faq-answer-text"><p>Jednostrzał to zazwyczaj zamknięta historia na jedno spotkanie. Mini-kampania i pełna kampania rozwijają fabułę przez kilka lub więcej sesji. Zawsze możemy omówić format odpowiadający konkretnej drużynie.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Ile trwa sesja i ile kosztuje jej prowadzenie?</summary>
+          <div class="faq-answer-text"><p>Standardowa sesja trwa zazwyczaj <strong>3–5 godzin</strong>. Obecna stawka to <strong>50 zł za godzinę do pięciu godzin</strong>, a każda kolejna godzina powyżej piątej kosztuje <strong>60 zł</strong>. Przy długotrwałych kampaniach możliwa jest niższa stawka, uzgadniana indywidualnie.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy gotowa przygoda i scenariusz autorski kosztują tyle samo?</summary>
+          <div class="faq-answer-text"><p>Tak. <strong>Stawka za samo prowadzenie jest taka sama</strong>, niezależnie od tego, czy wybrany scenariusz pochodzi z repertuaru, czy jest mojego autorstwa. Możesz przejrzeć <a href="repertuar.html">dostępne jednostrzały i kampanie</a>.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy za napisanie nowego scenariusza do zamówionej sesji doliczasz opłatę?</summary>
+          <div class="faq-answer-text"><p><strong>Nie.</strong> Jeśli zamawiasz u mnie prowadzenie sesji i potrzebny jest nowy scenariusz, jego napisanie mieści się w cenie prowadzenia. Inaczej wygląda zamówienie <em>samego tekstu scenariusza</em>, bez prowadzenia — to oddzielna usługa <a href="pracownia-narracji.html">Pracowni Narracji</a>, wyceniana indywidualnie.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy można dostosować gotowy scenariusz do naszej drużyny?</summary>
+          <div class="faq-answer-text"><p>Tak, drobne zmiany są naturalną częścią przygotowań. <strong>Większe modyfikacje ustalamy odpowiednio wcześniej</strong> — na przykład zmiana systemu w przeddzień sesji może wymagać nowego terminu lub innych uzgodnień.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy poprowadzisz kampanię bez gotowego scenariusza w repertuarze?</summary>
+          <div class="faq-answer-text"><p>Tak. Możemy zaplanować kampanię również do systemu, dla którego nie mam jeszcze gotowego materiału wpisanego w katalogu. Szczegóły, skalę projektu i harmonogram ustalimy wspólnie.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy jednostrzał można później rozwinąć w kampanię?</summary>
+          <div class="faq-answer-text"><p>Oczywiście. Jeśli historia i decyzje drużyny stworzą przestrzeń na dalszą opowieść, możemy zaplanować kolejne spotkania.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy mogę zamówić sesję na prezent albo wydarzenie?</summary>
+          <div class="faq-answer-text"><p>Tak. Możemy zorganizować sesję np. z okazji urodzin, spotkania znajomych lub wydarzenia integracyjnego. Napisz, ile osób weźmie udział i jaki klimat Cię interesuje.</p></div>
+        </details></div>
+      </section>
+<section class="faq-chapter" id="organizacja" aria-labelledby="title-organizacja" data-faq-group>
+        <div class="faq-chapter__heading"><span class="faq-chapter__number">04</span><div><p class="faq-chapter__eyebrow">Terminy, dopłaty i zmiany planów</p><h2 id="title-organizacja">Cennik, rezerwacje i organizacja</h2></div></div>
+        <div class="faq-chapter__questions"><details class="faq-question-card" data-faq-item>
+          <summary>Czy większa drużyna oznacza dopłatę?</summary>
+          <div class="faq-answer-text"><p>Tak. Za <strong>każdego gracza powyżej czterech osób</strong> doliczam <strong>25 zł jednorazowo za sesję</strong> — nie za każdą godzinę.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Jak działa opłata za dojazd?</summary>
+          <div class="faq-answer-text"><p>Dojazd we Wrocławiu ustalamy przy rezerwacji. <strong>50 zł</strong> dotyczy dojazdu do bliskich okolic Wrocławia, takich jak Bielany Wrocławskie czy Święta Katarzyna. Dalsze wyjazdy wyceniam indywidualnie.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy oferujesz zniżki i czy można je łączyć?</summary>
+          <div class="faq-answer-text"><p>Tak. Oferuję zniżki <strong>uczniowskie (20%)</strong> i <strong>studenckie (10%)</strong>, a także dopuszczam <strong>zniżki grupowe</strong>. Rabaty można łączyć; sposób naliczenia i ostateczną cenę uzgadniamy przed rezerwacją.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy trzeba wpłacić zaliczkę?</summary>
+          <div class="faq-answer-text"><p>Zaliczka może być wymagana przy <strong>kampaniach</strong> lub zamówieniach wymagających większych przygotowań. Jej wysokość i warunki ustalamy przed potwierdzeniem współpracy.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Kiedy i jak płacę za sesję?</summary>
+          <div class="faq-answer-text"><p>Najczęściej <strong>po zakończeniu sesji</strong>, chyba że uzgodnimy inaczej lub klient wybierze inną formę rozliczenia. Akceptuję gotówkę, kartę i płatność przez SumUp; na życzenie wystawiam fakturę.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Co jeśli jedna osoba z drużyny nie może przyjść?</summary>
+          <div class="faq-answer-text"><p>Zwykle stosuję zasadę <strong>„jednego może nie być”</strong> — możemy zagrać w pomniejszonym składzie. Możemy też wspólnie przełożyć termin. Ważne, żeby poinformować mnie o nieobecności odpowiednio wcześniej.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy można odwołać lub przełożyć sesję?</summary>
+          <div class="faq-answer-text"><p>Tak. Zasadniczo proszę o informację <strong>co najmniej 48 godzin wcześniej</strong>, zgodnie z aktualnym regulaminem. Oczywiście przewiduję wyjątki w nagłych sytuacjach, np. przy chorobie. W przypadku późnego odwołania szczegóły rozliczenia określa <a href="regulamin.html">regulamin</a> oraz indywidualne ustalenia.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Co jeśli to Ty odwołasz sesję?</summary>
+          <div class="faq-answer-text"><p>Jeśli muszę odwołać ustalone spotkanie, zaproponuję nowy termin. <strong>Na następną sesję oferuję 10% zniżki.</strong></p></div>
+        </details></div>
+      </section>
+<section class="faq-chapter" id="pracownia" aria-labelledby="title-pracownia" data-faq-group>
+        <div class="faq-chapter__heading"><span class="faq-chapter__number">05</span><div><p class="faq-chapter__eyebrow">Zamówienia pisarskie i prawa do tekstów</p><h2 id="title-pracownia">Pracownia Narracji</h2></div></div>
+        <div class="faq-chapter__questions"><details class="faq-question-card" data-faq-item>
+          <summary>Jakie materiały mogę zamówić?</summary>
+          <div class="faq-answer-text"><p>Tworzę scenariusze RPG, historie postaci, lore światów i rozbudowane łuki kampanii. Możesz też zwrócić się do mnie z większym projektem, np. opracowaniem świata czy materiału przygotowywanego do wydania.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy mogę zamówić sam scenariusz, bez prowadzenia sesji?</summary>
+          <div class="faq-answer-text"><p>Tak. W <a href="pracownia-narracji.html">Pracowni Narracji</a> przygotowuję teksty na zlecenie niezależnie od usługi prowadzenia gry. Takie zamówienia wyceniam indywidualnie, po ustaleniu zakresu.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Ile kosztuje zamówienie i jak długo trwa jego realizacja?</summary>
+          <div class="faq-answer-text"><p>Każdy projekt <strong>wyceniam indywidualnie</strong>. Orientacyjny czas realizacji to <strong>około tygodnia lub dłużej</strong>, zależnie od złożoności i objętości materiału. Konkretny termin potwierdzam przed rozpoczęciem pracy.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Ile poprawek jest wliczonych w cenę?</summary>
+          <div class="faq-answer-text"><p>Zazwyczaj przewiduję <strong>3–4 rundy poprawek</strong> w ramach uzgodnionego zamówienia. Dokładny zakres i sposób zgłaszania uwag ustalamy na początku współpracy.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy mogę zamówić poprawki po zaakceptowaniu projektu?</summary>
+          <div class="faq-answer-text"><p>Tak, ale dalsze zmiany po zaakceptowaniu gotowego materiału są <strong>usługą dodatkowo płatną</strong>. Ich zakres i koszt ustalamy przed wykonaniem.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy mogę opublikować lub komercyjnie wykorzystywać zamówiony tekst?</summary>
+          <div class="faq-answer-text"><p>To wymaga <strong>osobnych ustaleń i dodatkowej opłaty</strong>. Standardowe zamówienie nie oznacza automatycznie zgody na publikację lub komercyjne rozpowszechnianie materiału. Zakres praw do wykorzystania określamy przed realizacją projektu.</p></div>
+        </details></div>
+      </section>
+<section class="faq-chapter" id="publikacje" aria-labelledby="title-publikacje" data-faq-group>
+        <div class="faq-chapter__heading"><span class="faq-chapter__number">06</span><div><p class="faq-chapter__eyebrow">Wydane przygody oraz kontakt z autorem</p><h2 id="title-publikacje">Publikacje i twórczość</h2></div></div>
+        <div class="faq-chapter__questions"><details class="faq-question-card" data-faq-item>
+          <summary>Czy można zamówić prowadzenie przygody, którą wydałeś?</summary>
+          <div class="faq-answer-text"><p>Tak. Publikacja scenariusza i prowadzenie sesji to osobne możliwości. Jeśli interesuje Cię rozgrywka na podstawie mojego wydanego materiału, <a href="sesje-prywatne.html">napisz w sprawie sesji prywatnej</a>.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy Twoje materiały na DriveThruRPG są darmowe?</summary>
+          <div class="faq-answer-text"><p>Na razie moje publikowane materiały udostępniam w formule <strong>PWYW (Pay What You Want)</strong> — odbiorca sam wybiera kwotę. W przyszłości mogą pojawić się również materiały z ustaloną ceną. Aktualne publikacje znajdziesz w zakładce <a href="tworczosc.html#publikacje">Twórczość</a>.</p></div>
+        </details><details class="faq-question-card" data-faq-item>
+          <summary>Czy można napisać do Ciebie z pytaniami o publikację lub dodatkowe materiały?</summary>
+          <div class="faq-answer-text"><p>Tak, oczywiście. Jeśli masz pytania dotyczące wydanych przygód, zauważysz coś do poprawy albo interesują Cię materiały dodatkowe, możesz do mnie napisać.</p></div>
+        </details></div>
+      </section>
+      </div><p class="faq-searchbox__empty" id="faq-empty" hidden>Nie znaleziono pasujących pytań. Spróbuj innego hasła albo <a href="mailto:jakubkaminski1808@gmail.com">napisz do mnie</a>.</p>
+      <div class="faq-legal"><span aria-hidden="true">✧</span><p>FAQ pomaga zrozumieć ofertę. Szczegółowe warunki rezerwacji i współpracy znajdują się w <a href="regulamin.html">regulaminie</a>. Indywidualne ustalenia potwierdzamy przed zamówieniem.</p></div>
+    </section>
+    <section class="faq-cta"><div class="layout-wrap faq-cta__inner"><div><p class="eyebrow eyebrow--light">Zacznijmy od rozmowy</p><h2>Masz inną sytuację? <em>Porozmawiajmy.</em></h2><p>Nie każda drużyna i nie każdy projekt wygląda tak samo. Napisz, czego potrzebujesz, a ustalimy szczegóły.</p></div><a class="home-button home-button--gold" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20-%20Jakub%20Kami%C5%84ski">Skontaktuj się <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="layout-wrap site-footer__inner"><div class="site-footer__brand"><img src="logo-red.png" alt="" loading="lazy"><div><strong>Jakub Kamiński</strong><span>Mistrz Gry · Narracja · Wrocław</span></div></div><div class="site-footer__links"><a href="sesje-prywatne.html">Sesje prywatne</a><a href="repertuar.html">Repertuar</a><a href="tworczosc.html">Twórczość</a><a href="regulamin.html">Regulamin</a><a href="zrodla-zdjec.html">Źródła</a><a href="mailto:jakubkaminski1808@gmail.com">Kontakt</a></div><p class="site-footer__copyright">© 2026 Jakub Kamiński · Sesje RPG</p><p class="site-footer__attribution">Zdjęcia stockowe: <a href="https://www.magnific.com/" target="_blank" rel="noopener noreferrer">Designed by Magnific</a> · <a href="zrodla-zdjec.html">pełna lista źródeł</a></p></div></footer>
 </body>
 </html>

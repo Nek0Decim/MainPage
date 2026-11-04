@@ -1,0 +1,17 @@
+WERSJA 7 – FAQ I USTALENIA OFERTY
+
+Nowe pliki:
+- faq.html (przebudowana strona FAQ, pytania na podstawie 33 odpowiedzi właściciela)
+- faq-new.css (wygląd FAQ; dodatkowy do style.css i home.css)
+- faq-search.js (lokalna wyszukiwarka pytań)
+- sesje-prywatne.html (tylko doprecyzowania: 25 zł za komplet kart, bezpłatna sesja 0, scenariusz w cenie prowadzenia, dojazd w bliskie okolice)
+
+Nie zmieniano regulamin.html automatycznie, ponieważ wymaga osobnego zatwierdzenia postanowień umownych i analizy prawnej.
+
+DO SPRAWDZENIA PRZED PUBLIKACJĄ:
+- Regulamin: dopisać bezpłatną sesję 0, dopłatę za komplet kart, zasady zaliczek, zniżki łączone i rabaty grupowe, zakres dojazdu, rabat 10% gdy MG odwoła sesję, rozliczenie scenariusza pisanego na potrzeby prowadzenia, limity poprawek i komercyjne prawa do tekstów.
+- Regulamin §4 nadal dotyczy dawnych kampanii grupowych, choć oferta rekrutacyjna została usunięta.
+- Uzgodnić ostateczne warunki naliczania rabatów i zaliczek z klientem przed rezerwacją; szczegóły nie są jeszcze stałymi kwotami.
+- Sprawdzić regulamin pod kątem obowiązujących przepisów i praw konsumenta.
+
+Pozostałe podstrony i aplikacja lokalnego edytora pozostają bez zmian.

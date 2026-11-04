@@ -30,5 +30,8 @@
     el.addEventListener('change',update);
   }
   reset.addEventListener('click',() => { document.getElementById('rep-filters').reset(); update(); });
+  const params = new URLSearchParams(window.location.search);
+  const requestedKind = params.get('rodzaj');
+  if (requestedKind === 'one' || requestedKind === 'campaign') kind.value = requestedKind;
   update();
 })();

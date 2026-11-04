@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light"><title>Pracownia publikacji · RPG</title>
+<link rel="stylesheet" href="/ui.css"><script src="/ui.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/" aria-label="Panel publikowania RPG"><span class="brand-mark">✦</span><span><strong>Pracownia publikacji</strong><small>Lokalny edytor · Jakub Kamiński</small></span></a>
+  <div class="top-actions"><span class="local-pill">● Tylko na Twoim komputerze</span><a class="site-link" href="/view/tworczosc.html" target="_blank" rel="noopener">Zobacz stronę ↗</a></div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="tabs" role="tablist" aria-label="Rodzaj treści">
+      <button id="tab-articles" class="tab active" data-tab="articles" role="tab" aria-selected="true">✒ Artykuły</button>
+      <button id="tab-publications" class="tab" data-tab="publications" role="tab" aria-selected="false">▣ Publikacje RPG</button>
+    </div>
+    <div class="sidebar-main">
+      <div class="sidebar-label"><span id="list-heading">Twoje wpisy</span><span id="items-count"></span></div>
+      <button type="button" class="create-btn" id="new-btn">＋ Nowy artykuł</button>
+      <div class="search-side"><input id="list-search" type="search" placeholder="Szukaj w swoich wpisach..." aria-label="Szukaj wpisów"></div>
+      <div id="post-list" class="post-list" aria-live="polite"></div>
+    </div>
+    <div class="sidebar-footer"><div class="foot-icon">⌘</div><div><strong>Jak to działa?</strong><small>Edytujesz tutaj, a do GitHuba trafiają gotowe pliki dopiero po Twoim commicie.</small></div></div>
+  </aside>
+  <main class="main" id="editor-main">
+    <div class="editor-head"><div><p class="overline" id="editor-subtitle">ZAPISKI MISTRZA GRY</p><h1 id="editor-heading">Nowy artykuł</h1></div><span id="status-pill" class="status-pill">Nowy szkic</span></div>
+    <div id="error-banner" class="error-banner" role="alert" hidden></div>
+    <div id="success-banner" class="success-banner" role="status" hidden></div>
+    <form id="article-form" autocomplete="off" novalidate>
+      <section class="form-section"><h2>Informacje o artykule</h2><p class="help-intro">Te informacje utworzą kartę wpisu na stronie „Twórczość”.</p>
+        <label for="title">Tytuł artykułu <span class="required">*</span></label><input id="title" name="title" type="text" maxlength="160" placeholder="Np. Dlaczego improwizacja zmienia oblicze sesji RPG?" required>
+        <div class="field-row"><div><label for="category">Kategoria</label><select id="category"><option>Warsztat MG</option><option>Projektowanie narracji</option><option>Kulisy twórczości</option></select></div><div><label for="publishedAt">Data publikacji</label><input id="publishedAt" type="date" required></div></div>
+        <label for="slug">Adres artykułu (URL)</label><div class="url-input"><span>wpisy/</span><input id="slug" type="text" placeholder="automatycznie-z-tytulu"><span>.html</span></div><p class="hint">Małe litery bez polskich znaków, cyfry i myślniki. Po publikacji adres zostaje na stałe.</p>
+        <label for="lead">Krótka zajawka <span class="required">*</span></label><textarea id="lead" rows="3" maxlength="500" placeholder="2–3 zdania, które zachęcą do przeczytania wpisu."></textarea>
+      </section>
+      <section class="form-section"><div class="section-heading"><div><h2>Treść artykułu</h2><p class="help-intro">Pisz zwykłym tekstem. Formatowanie zrobisz przyciskami lub składnią Markdown.</p></div><button class="secondary small" type="button" id="preview-btn">◉ Odśwież podgląd</button></div>
+        <div class="toolbar" aria-label="Formatowanie tekstu"><button type="button" data-format="heading" title="Nagłówek">H2</button><button type="button" data-format="subheading" title="Mniejszy nagłówek">H3</button><button type="button" data-format="bold" title="Pogrubienie"><strong>B</strong></button><button type="button" data-format="italic" title="Kursywa"><em>I</em></button><button type="button" data-format="quote" title="Cytat">❝</button><button type="button" data-format="list" title="Lista">☷</button><button type="button" data-format="link" title="Link">↗</button><button type="button" data-format="rule" title="Separator">—</button></div>
+        <textarea id="body" class="body-editor" spellcheck="true" placeholder="## Początek opowieści\n\nZacznij tutaj pisać swój artykuł..."></textarea>
+        <div class="word-count" id="word-count">0 słów · szacunkowo 1 min czytania</div>
+        <details class="syntax-tip"><summary>Jak formatować artykuł?</summary><pre>## Duży nagłówek
+### Mniejszy nagłówek
+**pogrubiony fragment**
+*kursywa*
+> Cytat
+- element listy
+[Tekst odnośnika](https://example.com)
+---</pre><p>HTML wpisany w treści będzie wyświetlony jako tekst — nie jako kod strony.</p></details>
+      </section>
+      <section class="form-section"><div class="section-heading"><div><h2>Zdjęcie / okładka (opcjonalnie)</h2><p class="help-intro">PNG, JPG lub WEBP do 3 MB. Plik zostaje skopiowany do folderu strony.</p></div></div><div class="cover-row"><div id="cover-box" class="cover-box">✦</div><div class="cover-actions"><input id="cover-upload" type="file" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp"><button id="remove-cover" type="button" class="text-button">Usuń zdjęcie z wpisu</button><small>Przesłane pliki znajdują się w <code>images/blog/</code>.</small></div></div></section>
+      <section class="form-section"><h2>Podgląd treści</h2><div id="preview-area" class="preview-area"><p class="preview-placeholder">Tutaj zobaczysz, jak będzie wyglądał tekst. Wpisz treść i kliknij „Odśwież podgląd”.</p></div></section>
+      <div class="actionbar"><div><button id="save-draft" class="secondary" type="button">Zapisz szkic</button><button id="publish" class="primary" type="button">Opublikuj artykuł ↗</button></div><div class="aux-actions"><button id="open-article" type="button" class="secondary" hidden>Otwórz artykuł ↗</button><button id="unpublish" type="button" class="text-button danger" hidden>Wycofaj publikację</button><button id="delete-draft" type="button" class="text-button danger" hidden>Usuń szkic</button></div></div>
+    </form>
+    <form id="publication-form" autocomplete="off" hidden novalidate>
+      <section class="form-section"><h2>Dane publikacji RPG</h2><p class="help-intro">W ten sposób dodasz wydaną przygodę do zakładki „Twórczość” bez edycji JavaScriptu.</p>
+        <label for="pub-title">Tytuł publikacji <span class="required">*</span></label><input id="pub-title" maxlength="160" placeholder="Tytuł wydanej przygody">
+        <div class="field-row"><div><label for="pub-system">System RPG</label><input id="pub-system" placeholder="Np. D&D 5e"></div><div><label for="pub-format">Format</label><input id="pub-format" placeholder="Np. Jednostrzał"></div></div>
+        <label for="pub-description">Opis publikacji</label><textarea id="pub-description" rows="5" maxlength="1000" placeholder="Krótki opis przygody bez spoilerów"></textarea>
+        <label for="pub-url">Link do sklepu / DriveThruRPG</label><input id="pub-url" type="url" placeholder="https://www.drivethrurpg.com/..."><p class="hint">Adres musi rozpoczynać się od https://. Jeśli jeszcze nie masz linku, możesz go dodać później.</p>
+        <label>Okładka publikacji</label><div class="cover-row"><div id="pub-cover-box" class="cover-box">✦</div><div class="cover-actions"><input id="pub-cover-upload" type="file" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp"><button id="pub-remove-cover" type="button" class="text-button">Usuń okładkę</button></div></div>
+      </section>
+      <div class="actionbar"><button type="button" id="save-publication" class="primary">Zapisz publikację ↗</button><button type="button" id="delete-publication" class="text-button danger" hidden>Usuń z listy publikacji</button></div>
+    </form>
+    <div class="git-hint"><span>✓</span><div><strong>Bez automatycznego wysyłania do Internetu</strong><p>Po kliknięciu „Opublikuj” pliki są zapisane na dysku. Dopiero Twój <code>git add / commit / push</code> wyśle je do repozytorium.</p></div></div>
+  </main>
+</div>
+</body>
+</html>

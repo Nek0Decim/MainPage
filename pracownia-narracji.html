@@ -1,135 +1,212 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pracownia Narracji – Jakub Kamiński</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#63191d">
+  <meta name="description" content="Pracownia Narracji Jakuba Kamińskiego: scenariusze RPG, historie postaci, lore światów i łuki kampanii na indywidualne zamówienie. Poznaj ofertę i zasady współpracy.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Pracownia Narracji | Jakub Kamiński">
+  <meta property="og:description" content="Od pierwszego pomysłu do historii, którą można przeżyć. Tworzę scenariusze RPG, postacie i światy na zamówienie.">
+  <meta property="og:image" content="logo-red.png">
+  <title>Pracownia Narracji | Scenariusze i opowieści RPG na zamówienie — Jakub Kamiński</title>
+  <link rel="icon" type="image/png" href="logo-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="studio.css">
+  <script src="tworczosc-data.js" defer></script>
+  <script src="studio.js" defer></script>
 </head>
-<body>
-
-<header>
-    <div class="header-inner">
-        <img src="logo-red.png" alt="Logo">
-        <div class="title-group">
-            <h1>Jakub Kamiński</h1>
-            <p>Mistrz Gry · Narracja · Wrocław</p>
-        </div>
+<body class="home-page studio-page">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-brand" aria-label="Jakub Kamiński — strona główna">
+        <img src="logo-red.png" width="74" height="74" alt="" decoding="async">
+        <span class="site-brand__text">
+          <span class="site-brand__name">Jakub Kamiński</span>
+          <span class="site-brand__subtitle">Mistrz Gry · Narracja · Wrocław</span>
+        </span>
+      </a>
+      <a class="header-contact" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20o%20projekt%20narracyjny">Porozmawiajmy <span aria-hidden="true">↗</span></a>
     </div>
-</header>
-
-<nav>
-    <div class="nav-inner">
-        <a href="index.html">Strona główna</a>
-        <a href="o-mnie.html">O mnie</a>
+  </header>
+  <nav class="site-nav" aria-label="Nawigacja główna">
+    <div class="site-nav__desktop">
+      <a href="index.html">Start</a>
+      <a href="sesje-prywatne.html">Sesje prywatne</a>
+      <a href="repertuar.html">Repertuar</a>
+      <a href="pracownia-narracji.html" class="is-current" aria-current="page">Pracownia Narracji</a>
+      <a href="tworczosc.html">Twórczość</a>
+      <a href="o-mnie.html">O mnie</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <details class="site-nav__mobile">
+      <summary>Menu <span class="site-nav__menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+      <div class="site-nav__mobile-links">
+        <a href="index.html">Start</a>
         <a href="sesje-prywatne.html">Sesje prywatne</a>
-        <a href="sesje-grupowe.html">Sesje grupowe</a>
-        <a href="pracownia-narracji.html" class="active">Pracownia Narracji</a>
+        <a href="repertuar.html">Repertuar</a>
+        <a href="pracownia-narracji.html" aria-current="page">Pracownia Narracji</a>
+        <a href="tworczosc.html">Twórczość</a>
+        <a href="o-mnie.html">O mnie</a>
         <a href="faq.html">FAQ</a>
-    </div>
-</nav>
+      </div>
+    </details>
+  </nav>
 
-<div class="page-header">
-    <h2>Pracownia Narracji</h2>
-    <div class="page-header-divider"></div>
-    <p>Masz pomysł. Ja dam mu formę, głębię i historię, którą chce się opowiadać.</p>
-</div>
-
-<section class="about-section">
-
-    <div class="about-block">
-        <div class="about-image">
-            <img src="inspiracje.png" alt="Pracownia Narracji">
+  <main id="tresc">
+    <section class="studio-hero" aria-labelledby="studio-title">
+      <div class="layout-wrap studio-hero__inner">
+        <div class="studio-hero__copy">
+          <p class="eyebrow eyebrow--light"><span aria-hidden="true">✦</span> Autorskie historie · Projekty narracyjne</p>
+          <h1 id="studio-title">Masz pomysł.<em>Ja pomogę nadać mu życie.</em></h1>
+          <p>Od pojedynczej przygody po historię całego świata. Piszę scenariusze RPG, tworzę bohaterów i projektuję opowieści, które pozostawiają przestrzeń na wybory graczy.</p>
+          <div class="studio-hero__actions">
+            <a class="home-button home-button--gold" href="#uslugi">Poznaj ofertę <span aria-hidden="true">↓</span></a>
+            <a class="home-button home-button--light-outline" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20-%20Pracownia%20Narracji">Opowiedz mi o projekcie <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="studio-hero__foot">Dla graczy, Mistrzów Gry i twórców szukających wsparcia przy pisaniu.</p>
         </div>
-        <div class="about-content">
-            <span class="content-tag">Usługi pisarskie</span>
-            <h2>Co tworzę</h2>
-            <p>
-                Pracownia Narracji to moja oferta pisarska — dla graczy, MG i twórców
-                szukających kogoś, kto przekuje surowy pomysł w gotowy materiał.
-            </p>
-            <p>
-                Piszę scenariusze sesji RPG — od jednorazowych przygód
-                po rozbudowane łuki fabularne z wieloma wątkami i NPCami.
-                Tworzę też lore i opisy świata, które czuć w każdej scenie.
-            </p>
-            <p>
-                Jeśli chcesz grać postacią z prawdziwą historią, mogę napisać jej backstory —
-                z motywacjami, traumami, powiązaniami ze światem i haczykami fabularnymi
-                gotowymi do wykorzystania przy stole.
-            </p>
-        </div>
+        <figure class="studio-hero__visual">
+          <img src="images/studio-hero.jpg" alt="Przybory do pisania na kartach RPG" width="1117" height="1100" fetchpriority="high">
+          <figcaption>Nie gotowe zakończenie, lecz świat pełen możliwości.</figcaption>
+        </figure>
+      </div>
+      <div class="studio-hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <div class="studio-intro-strip" aria-label="Główne obszary pracy">
+      <div class="layout-wrap studio-intro-strip__inner">
+        <span><b>01</b> Scenariusze i przygody</span>
+        <span><b>02</b> Postacie i ich historie</span>
+        <span><b>03</b> Światy i kampanie</span>
+      </div>
     </div>
 
-    <div class="about-block reverse">
-        <div class="image-placeholder"></div>
-        <div class="about-content">
-            <span class="content-tag">Oferta szczegółowa</span>
-            <h2>Zakres usług</h2>
+    <section id="uslugi" class="studio-section studio-services layout-wrap" aria-labelledby="services-heading">
+      <div class="studio-heading">
+        <p class="eyebrow">01 <span aria-hidden="true">/</span> Zakres usług</p>
+        <h2 id="services-heading">Co mogę <em>dla Ciebie stworzyć?</em></h2>
+        <p>Nie musisz mieć gotowego scenariusza ani rozpisanego świata. Możemy zacząć od ogólnego pomysłu i dopiero wspólnie określić formę materiału.</p>
+      </div>
+      <div class="studio-services__grid">
+        <article class="studio-service-card">
+          <div class="studio-service-card__top"><span class="studio-service-card__glyph" aria-hidden="true">✦</span><span class="studio-service-card__number">I / Przygoda</span></div>
+          <h3>Scenariusze RPG</h3>
+          <p>Jednostrzał lub rozbudowana przygoda z konfliktem, bohaterami niezależnymi i sytuacjami, które mogą zmieniać się pod wpływem decyzji drużyny.</p>
+          <div class="studio-service-card__chips" aria-label="Przykładowe elementy"><span>Fabuła</span><span>NPC</span><span>Możliwe ścieżki</span></div>
+        </article>
+        <article class="studio-service-card">
+          <div class="studio-service-card__top"><span class="studio-service-card__glyph" aria-hidden="true">❖</span><span class="studio-service-card__number">II / Bohater</span></div>
+          <h3>Historie postaci</h3>
+          <p>Backstory z motywacjami, relacjami i haczykami fabularnymi, które Mistrz Gry może wykorzystać w opowieści. Nie tylko życiorys, ale punkt wyjścia do gry.</p>
+          <div class="studio-service-card__chips" aria-label="Przykładowe elementy"><span>Motywacje</span><span>Relacje</span><span>Wątki</span></div>
+        </article>
+        <article class="studio-service-card">
+          <div class="studio-service-card__top"><span class="studio-service-card__glyph" aria-hidden="true">✧</span><span class="studio-service-card__number">III / Świat</span></div>
+          <h3>Lore i worldbuilding</h3>
+          <p>Historia miejsca, mitologia, frakcje, kultury i powiązania między nimi. Spójne tło, które daje uczestnikom opowieści coś więcej niż zbiór faktów.</p>
+          <div class="studio-service-card__chips" aria-label="Przykładowe elementy"><span>Frakcje</span><span>Historia</span><span>Lokacje</span></div>
+        </article>
+        <article class="studio-service-card">
+          <div class="studio-service-card__top"><span class="studio-service-card__glyph" aria-hidden="true">✥</span><span class="studio-service-card__number">IV / Kampania</span></div>
+          <h3>Łuki fabularne kampanii</h3>
+          <p>Wielosesyjna struktura przygód, główny konflikt, wątki poboczne i punkty zwrotne. Projekt, który pozostaje otwarty na wybory i improwizację.</p>
+          <div class="studio-service-card__chips" aria-label="Przykładowe elementy"><span>Struktura</span><span>Konflikty</span><span>Rozwój historii</span></div>
+        </article>
+      </div>
+      <p class="studio-services__note">Chcesz połączyć kilka obszarów, np. scenariusz z historią świata? Zakres każdego zamówienia ustalam indywidualnie.</p>
+    </section>
 
-            <div class="price-grid">
-                <div class="price-item">
-                    <strong>Scenariusz sesji</strong>
-                    <span>Pełna przygoda z mapą sytuacji, NPCami i rozgałęzieniami</span>
-                </div>
-                <div class="price-item">
-                    <strong>Historia postaci</strong>
-                    <span>Backstory z motywacjami, relacjami i haczykami fabularnymi</span>
-                </div>
-                <div class="price-item">
-                    <strong>Lore świata</strong>
-                    <span>Frakcje, mitologia, historia, geografia — spójna i żywa</span>
-                </div>
-                <div class="price-item">
-                    <strong>Łuk kampanii</strong>
-                    <span>Wielosesyjna struktura fabularna z kulminacją i wątkami pobocznymi</span>
-                </div>
-            </div>
-
-            <p class="price-note">Wycena indywidualna — zależy od zakresu i złożoności materiału.</p>
+    <section class="studio-approach" aria-labelledby="approach-heading">
+      <div class="layout-wrap studio-approach__inner">
+        <div class="studio-approach__image">
+          <img src="images/studio-process.jpg" alt="Zeszyt z planem gry fabularnej i kośćmi" loading="lazy" width="1117" height="1100">
+          <span class="studio-approach__corner" aria-hidden="true">✦</span>
         </div>
-    </div>
-
-    <div class="about-block">
-        <div class="image-placeholder"></div>
-        <div class="about-content">
-            <span class="content-tag">Zamów</span>
-            <h2>Jak zamówić?</h2>
-            <p>
-                Napisz do mnie z opisem tego, czego potrzebujesz —
-                nie musisz mieć gotowego briefu. Wystarczy zarys pomysłu,
-                klimat jaki chcesz uchwycić i cel końcowy.
-            </p>
-            <p>
-                Razem doprecyzujemy zakres, czas realizacji i cenę.
-                Pracuję z feedbackiem i poprawkami wliczonymi w proces.
-            </p>
-            <p>
-                📧 <a href="mailto:jakubkaminski1808@gmail.com" style="color: var(--primary);">jakubkaminski1808@gmail.com</a><br>
-                📞 <a href="tel:+48735780951" style="color: var(--primary);">+48 735 780 951</a>
-            </p>
+        <div class="studio-approach__copy">
+          <p class="eyebrow">02 <span aria-hidden="true">/</span> Moje podejście</p>
+          <h2 id="approach-heading">Historia, która <em>potrafi zaskoczyć.</em></h2>
+          <p>W scenariuszu najważniejsze nie jest dla mnie przewidzenie każdego ruchu graczy. Wolę przygotować przekonujących bohaterów, konflikty i świat, który będzie miał własną logikę.</p>
+          <p>Dlatego projektuję materiały tak, by pomagały prowadzącemu reagować na działania drużyny, a nie wymuszały jedną kolejność scen. To samo podejście stosuję do historii postaci i tworzenia lore.</p>
+          <blockquote>„Scenariusz ma otwierać możliwości, nie zamykać je w jednym zakończeniu.”</blockquote>
+          <a class="text-link" href="o-mnie.html#filozofia">Poznaj moją filozofię prowadzenia <span aria-hidden="true">↗</span></a>
         </div>
-    </div>
+      </div>
+    </section>
 
-</section>
+    <section class="studio-section studio-process layout-wrap" id="wspolpraca" aria-labelledby="process-heading">
+      <div class="studio-heading">
+        <p class="eyebrow">03 <span aria-hidden="true">/</span> Od pomysłu do materiału</p>
+        <h2 id="process-heading">Jak wygląda <em>współpraca?</em></h2>
+        <p>Prosty proces, którego szczegóły dostosowujemy do rodzaju projektu.</p>
+      </div>
+      <ol class="studio-process__steps">
+        <li class="studio-process__step"><span class="studio-process__number">01</span><div><h3>Opowiadasz o pomyśle</h3><p>Wystarczy zarys fabuły, pomysł na postać, system RPG albo klimat, który chcesz uzyskać. Nie wymagam gotowego briefu.</p></div></li>
+        <li class="studio-process__step"><span class="studio-process__number">02</span><div><h3>Ustalamy zakres</h3><p>Wspólnie określamy, co ma powstać, do czego materiał będzie używany oraz termin, koszt i zakres poprawek.</p></div></li>
+        <li class="studio-process__step"><span class="studio-process__number">03</span><div><h3>Tworzę i konsultuję</h3><p>Przygotowuję uzgodniony materiał, uwzględniając wcześniej ustalony sposób zbierania uwag i wprowadzania poprawek.</p></div></li>
+        <li class="studio-process__step"><span class="studio-process__number">04</span><div><h3>Otrzymujesz gotowy projekt</h3><p>Przekazuję materiał w uzgodnionej formie. Dalsze wykorzystanie i ewentualną publikację ustalamy zgodnie z charakterem zamówienia.</p></div></li>
+      </ol>
+    </section>
 
-<footer>
-    <div class="footer-inner">
-        <img src="logo-red.png" alt="Logo" class="footer-logo">
-        <p class="footer-contact">
-            <a href="mailto:jakubkaminski1808@gmail.com">jakubkaminski1808@gmail.com</a>
-            &nbsp;·&nbsp;
-            <a href="tel:+48735780951">+48 735 780 951</a>
-        </p>
-        <div class="footer-links">
-            <a href="regulamin.html">Regulamin</a>
+    <section class="studio-showcase" aria-labelledby="showcase-heading">
+      <div class="layout-wrap studio-showcase__inner">
+        <div class="studio-showcase__copy">
+          <p class="eyebrow eyebrow--light">04 <span aria-hidden="true">/</span> Własne projekty</p>
+          <h2 id="showcase-heading">Tworzę również <em>dla innych Mistrzów Gry.</em></h2>
+          <p>Piszę własne przygody RPG. Pierwszy scenariusz został już opublikowany, a kolejne materiały oraz artykuły o projektowaniu narracji znajdziesz w zakładce „Twórczość”.</p>
+          <div class="studio-showcase__highlight" id="studio-publication" hidden>
+            <p class="studio-showcase__highlight-label">Wydana przygoda</p>
+            <h3 id="studio-publication-title"></h3>
+            <p id="studio-publication-desc"></p>
+            <a id="studio-publication-link" class="studio-showcase__pub-link" href="tworczosc.html#publikacje">Zobacz publikację <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="studio-showcase__actions">
+            <a class="home-button home-button--gold" href="tworczosc.html#publikacje">Moje publikacje <span aria-hidden="true">↗</span></a>
+            <a class="studio-showcase__subtle-link" href="tworczosc.html#zapiski">Zapiski Mistrza Gry <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <p>© 2025 Jakub Kamiński – Sesje RPG · Wrocław</p>
+        <div class="studio-showcase__visual" aria-hidden="true">
+          <span class="studio-showcase__ornament">✦</span>
+          <img src="logo-red.png" alt="" loading="lazy" width="250" height="250">
+          <span class="studio-showcase__small">Pracownia Narracji</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio-section studio-terms layout-wrap" aria-labelledby="terms-heading">
+      <div class="studio-terms__intro">
+        <div><p class="eyebrow">05 <span aria-hidden="true">/</span> Zanim zaczniemy</p><h2 id="terms-heading">Jasne zasady, <em>od początku.</em></h2></div>
+        <p>Każda historia jest inna, dlatego nie podaję jednej ceny dla wszystkich projektów. Wycena zależy od zakresu i złożoności pracy.</p>
+      </div>
+      <div class="studio-terms__grid">
+        <div class="studio-term"><span class="studio-term__mark" aria-hidden="true">✧</span><h3>Indywidualna wycena</h3><p>Ustalamy ją przed rozpoczęciem pracy, razem z terminem realizacji i zakresem materiału.</p></div>
+        <div class="studio-term"><span class="studio-term__mark" aria-hidden="true">✧</span><h3>Uwagi i poprawki</h3><p>Poprawki mieszczące się w uzgodnionym zakresie są częścią współpracy. Ich szczegóły ustalamy wcześniej.</p></div>
+        <div class="studio-term"><span class="studio-term__mark" aria-hidden="true">✧</span><h3>Wykorzystanie tekstu</h3><p>Jeśli materiał ma być dalej publikowany lub rozpowszechniany, uzgadniamy to osobno.</p></div>
+      </div>
+      <div class="studio-terms__links"><a class="text-link" href="faq.html">Pytania i odpowiedzi <span aria-hidden="true">↗</span></a><a class="text-link" href="regulamin.html">Zasady współpracy <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="contact-banner" aria-labelledby="studio-contact-title">
+      <div class="layout-wrap contact-banner__inner">
+        <div><p class="eyebrow eyebrow--light">Opowiedz mi, co masz w głowie</p><h2 id="studio-contact-title">Zamieńmy pomysł w opowieść.</h2><p>Napisz, czego potrzebujesz. Nawet kilka zdań o klimacie, bohaterach czy świecie wystarczy, żeby zacząć rozmowę.</p></div>
+        <a class="home-button home-button--gold" href="mailto:jakubkaminski1808@gmail.com?subject=Zapytanie%20-%20Pracownia%20Narracji">Porozmawiajmy o projekcie <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout-wrap site-footer__inner">
+      <div class="site-footer__brand"><img src="logo-red.png" alt="" loading="lazy"><div><strong>Jakub Kamiński</strong><span>Mistrz Gry · Narracja · Wrocław</span></div></div>
+      <div class="site-footer__links"><a href="o-mnie.html">O mnie</a><a href="sesje-prywatne.html">Sesje prywatne</a><a href="repertuar.html">Repertuar</a><a href="tworczosc.html">Twórczość</a><a href="faq.html">FAQ</a><a href="regulamin.html">Regulamin</a><a href="zrodla-zdjec.html">Źródła</a><a href="mailto:jakubkaminski1808@gmail.com">Kontakt</a></div>
+      <p class="site-footer__copyright">© 2026 Jakub Kamiński · Sesje RPG</p>
+      <p class="site-footer__attribution">Zdjęcia stockowe: <a href="https://www.magnific.com/" target="_blank" rel="noopener noreferrer">Designed by Magnific</a> · <a href="zrodla-zdjec.html">pełna lista źródeł</a></p>
     </div>
-</footer>
-
-<a href="index.html" class="back-button">← Powrót</a>
-
+  </footer>
 </body>
 </html>

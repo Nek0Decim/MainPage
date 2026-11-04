@@ -10,7 +10,7 @@ Zaktualizowane pliki:
 - o-mnie.html — pozycja Repertuar w menu
 - sesje-prywatne.html — odnośnik do pełnego katalogu i poprawiony opis
 
-W katalogu: 16 jednostrzałów, 7 kampanii (23 tytuły).
+W katalogu: 17 jednostrzałów, 8 kampanii (25 tytułów).
 Nie podawano autorstwa, długości przygód, poziomów, cen ani statusu dostępności, bo nie były potwierdzone.
 
 POPRAWKI W WERSJI 3.1:

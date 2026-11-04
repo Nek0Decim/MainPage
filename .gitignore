@@ -1,0 +1,5 @@
+# Robocze szkice i pliki techniczne – nie wysyłaj ich na GitHub
+.szkice-lokalne/
+__pycache__/
+*.pyc
+.DS_Store

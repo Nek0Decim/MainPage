@@ -70,7 +70,7 @@
 .home-page .action-row {display:flex;flex-wrap:wrap;gap:13px;margin-top:32px;}
 .home-page .main-hero__smallprint {font-size:.87rem;letter-spacing:.02em;color:#c5ac9b;margin-top:28px;}
 .home-page .smallprint-sep {margin:0 8px;color:#ba9464;}
-.home-page .main-hero__art {height:100%;max-height:500px;min-height:400px;display:flex;align-items:stretch;padding:18px;position:relative;background:linear-gradient(125deg,rgba(75,34,33,.10),rgba(52,28,26,.75)),url('images/stock-hero.jpg') center / cover no-repeat;border:1px solid rgba(229,195,144,.25);box-shadow:0 14px 45px rgba(0,0,0,.3);}
+.home-page .main-hero__art {height:100%;max-height:500px;min-height:400px;display:flex;align-items:stretch;padding:18px;position:relative;background:linear-gradient(125deg,rgba(75,34,33,.10),rgba(52,28,26,.75)),url('images/home-hero.jpg') center / cover no-repeat;border:1px solid rgba(229,195,144,.25);box-shadow:0 14px 45px rgba(0,0,0,.3);}
 .home-page .main-hero__art::before {content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 47%,transparent 0%,rgba(33,15,17,.58) 82%);pointer-events:none;}
 .home-page .main-hero__frame {border:1px solid rgba(226,190,131,.42);width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;}
 .home-page .frame-corner {position:absolute;width:24px;height:24px;border:2px solid #d8b976;}
@@ -95,9 +95,9 @@
 .home-page .offer-card:hover {transform:translateY(-5px);box-shadow:0 18px 36px rgba(66,25,23,.14);}
 .home-page .offer-card__visual {height:190px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;isolation:isolate;background-size:cover;background-position:center;}
 .home-page .offer-card__visual::after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(54,22,24,.08),rgba(47,18,21,.63));z-index:-1;}
-.home-page .offer-card__visual--sessions {background-image:linear-gradient(125deg,rgba(88,34,37,.34),rgba(42,23,27,.6)),url('images/stock-sesje.jpg');background-color:#75443d;}
-.home-page .offer-card__visual--campaigns {background-image:linear-gradient(125deg,rgba(88,34,37,.32),rgba(42,23,27,.65)),url('images/stock-kampanie.jpg');background-color:#4f4142;}
-.home-page .offer-card__visual--studio {background-image:linear-gradient(125deg,rgba(88,34,37,.34),rgba(42,23,27,.62)),url('images/stock-pracownia.jpg');background-color:#7b574b;}
+.home-page .offer-card__visual--sessions {background-image:linear-gradient(125deg,rgba(88,34,37,.34),rgba(42,23,27,.6)),url('images/home-sesje.jpg');background-color:#75443d;}
+.home-page .offer-card__visual--campaigns {background-image:linear-gradient(125deg,rgba(88,34,37,.32),rgba(42,23,27,.65)),url('images/home-repertuar.jpg');background-color:#4f4142;}
+.home-page .offer-card__visual--studio {background-image:linear-gradient(125deg,rgba(88,34,37,.34),rgba(42,23,27,.62)),url('images/home-pracownia.jpg');background-color:#7b574b;}
 .home-page .offer-card__visual::before {content:"";position:absolute;inset:14px;border:1px solid rgba(246,225,191,.42);}
 .home-page .offer-card__symbol {font-family:'Playfair Display',serif;color:#f1d6aa;font-size:4.6rem;line-height:1;text-shadow:0 3px 15px rgba(0,0,0,.35);}
 .home-page .offer-card__number {position:absolute;top:22px;left:25px;color:#e9c997;font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.12em;}
@@ -111,7 +111,7 @@
 .home-page .section-heading--row>p {max-width:380px;margin:0;}
 .home-page .creation-grid {display:grid;grid-template-columns:1.4fr 1fr;gap:25px;}
 .home-page .creation-feature {display:grid;grid-template-columns:.75fr 1fr;min-height:383px;background:linear-gradient(120deg,#5d1b23,#351719);color:#f8eada;overflow:hidden;box-shadow:0 10px 35px rgba(59,20,24,.16);}
-.home-page .creation-feature__art {display:flex;align-items:center;justify-content:center;padding:38px 27px;position:relative;background:radial-gradient(ellipse at 50% 45%,rgba(177,133,79,.3),transparent 72%),linear-gradient(180deg,rgba(58,29,32,.55),rgba(37,19,22,.65)),url('images/stock-publikacja.jpg') center / cover no-repeat;}
+.home-page .creation-feature__art {display:flex;align-items:center;justify-content:center;padding:38px 27px;position:relative;background:radial-gradient(ellipse at 50% 45%,rgba(177,133,79,.3),transparent 72%),linear-gradient(180deg,rgba(58,29,32,.55),rgba(37,19,22,.65)),url('images/home-tworczosc.jpg') center / cover no-repeat;}
 .home-page .book-mock {width:178px;max-width:100%;aspect-ratio:2 / 3.05;background:linear-gradient(128deg,#4b1d21,#7f3531 49%,#321c20);box-shadow:13px 15px 25px rgba(0,0,0,.45),inset 9px 0 12px rgba(0,0,0,.25),inset 0 0 0 2px #ba9361;position:relative;border:1px solid #b99a6e;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:15px;transform:rotate(-4deg);}
 .home-page .book-mock::before {content:"";position:absolute;inset:13px;border:1px solid rgba(235,193,125,.48);}
 .home-page .book-mock__symbol {font-size:2rem;color:#dabc7d;}
@@ -139,7 +139,7 @@
 .home-page .campaign-preview__copy {padding:56px 55px 52px;position:relative;z-index:1;}
 .home-page .campaign-preview h2 {color:#681e23;font-size:clamp(1.55rem,2.8vw,2.35rem);margin:13px 0 17px;}
 .home-page .campaign-preview__copy>p:not(.eyebrow) {color:#64544c;line-height:1.7;max-width:570px;font-size:1.1rem;margin-bottom:25px;}
-.home-page .campaign-preview__image {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;background:linear-gradient(130deg,rgba(37,19,23,.12),rgba(46,19,24,.72)),url('images/stock-kampanie.jpg') center / cover no-repeat,#5c3436;position:relative;color:#e4c18c;}
+.home-page .campaign-preview__image {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;background:linear-gradient(130deg,rgba(37,19,23,.12),rgba(46,19,24,.72)),url('images/home-repertuar.jpg') center / cover no-repeat,#5c3436;position:relative;color:#e4c18c;}
 .home-page .campaign-preview__image::before {content:"";inset:20px;position:absolute;border:1px solid rgba(231,192,135,.45);}
 .home-page .campaign-preview__rune {font-size:4rem;line-height:1;text-shadow:0 3px 9px rgba(0,0,0,.35);}
 .home-page .campaign-preview__caption {font-family:'Playfair Display',serif;font-style:italic;font-size:1.33rem;line-height:1.3;color:#f8e5ca;text-align:center;text-shadow:0 2px 9px rgba(0,0,0,.45);}
@@ -168,7 +168,7 @@
 .home-page .site-footer__brand strong {font-family:'Cinzel',serif;font-size:.87rem;font-weight:500;letter-spacing:.05em;}
 .home-page .site-footer__brand span {color:#bfa79c;font-size:.86rem;font-style:italic;}
 .home-page .site-footer__links {display:flex;gap:18px;flex-wrap:wrap;}
-.home-page .site-footer__links a {font-family:'Cinzel',serif;font-size:.64rem;letter-spacing:.04em;text-decoration:none;color:#d8b98e;}
+.home-page .site-footer__links a {font-family:'Cinzel',serif;font-size:.73rem;letter-spacing:.04em;text-decoration:none;color:#d8b98e;}
 .home-page .site-footer__links a:hover {color:#fff;}
 .home-page footer .site-footer__copyright {font-size:.8rem;opacity:.55;letter-spacing:0;margin:0;}
 @media (max-width:1100px) {
@@ -246,3 +246,11 @@
 
 /* Nawigacja po dodaniu repertuaru (8 linków na dużych ekranach) */
 @media (min-width:801px) and (max-width:1140px) { .home-page .site-nav__desktop {gap:2px;} .home-page .site-nav__desktop a {font-size:.59rem;padding:15px 7px;letter-spacing:.015em;} }
+/* Okładka z lokalnego panelu publikacji */
+.home-page .creation-home-cover {width:min(190px,90%);height:auto;max-height:280px;object-fit:contain;box-shadow:9px 13px 24px #0007;border:1px solid #cba571;transform:rotate(-3deg);}
+
+/* Shared attribution line and sources link in every modern page footer */
+.home-page .site-footer__attribution {flex:0 0 100%;width:100%;margin:2px 0 0;padding-top:11px;border-top:1px solid rgba(229,196,156,.15);font-family:'Crimson Text',Georgia,serif;font-size:.83rem;line-height:1.6;color:#cdb8a6;opacity:1;letter-spacing:0;text-align:left;}
+.home-page .site-footer__attribution a {color:#ebc990;text-decoration:underline;text-underline-offset:3px;}
+.home-page .site-footer__attribution a:hover {color:#fff3db;}
+.home-page .site-footer__links a:focus-visible,.home-page .site-footer__attribution a:focus-visible {outline:2px solid #f0ce92;outline-offset:4px;}
